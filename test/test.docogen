@@ -1,0 +1,152 @@
+{
+    "title": "docoGen Example",
+    "options": {
+        "type":"article"
+    },
+    "author": [
+        {
+            "name": "Kevin Cyu 瞿旭民",
+            "email": "kevinbird61@gmail.com",
+            "phone": "+886-912-345-678",
+            "unit": "Intelligent Mobile Service Laboratory, CSIE, NCKU",
+            "website": "https://github.com/kevinbird61"
+        }, {
+            "name": "Yung-Sheng Lu 陸勇盛",
+            "email": "yungshenglu1994@gmail.com",
+            "phone": "+886-912-345-678",
+            "unit": "Networking and Sensing Systems Laboratory, CS, NCTU",
+            "website": "https://github.com/yungshenglu"
+        }
+    ],
+    "abstract": {
+        "content": [
+            "I went down to the river,"
+            , "I set down on the bank."
+            , "I tried to think but couldn't,"
+            , "So I jumped in and sank."
+        ]
+    },
+    "article": [{
+            "article": [{
+                "title": "Getting Start1",
+                "priority": 0,
+                "content": [{
+                        "name": "Merging test",
+                        "type": "text",
+                        "data": [{
+                                "info": "Building your document and website together."
+                            }, {
+                                "info": "New feature support. Next-line testing."
+                            }
+                        ],
+                        "figure": [{
+                                "path": "",
+                                "align": "",
+                                "size": ""
+                            }
+                        ],
+                        "subsection": [{
+                                "title": "Why we create Docogen?",
+                                "content": [{
+                                        "name": "Why we create Docogen?",
+                                        "type": "text",
+                                        "data": [{
+                                                "info": "Building your document and website together."
+                                            }, {
+                                                "info": "Generate a beautiful introduction paper with simple command."
+                                            }
+                                        ],
+                                        "figure": [{
+                                                "path": "",
+                                                "align": "",
+                                                "size": ""
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }],
+            "reference": [{
+                    "name": "ToolBuddy",
+                    "content": "A good, non-profit organization."
+                }
+            ]
+        }, {
+            "article": [{
+                "title": "Getting Start2",
+                "priority": 1,
+                "content": [{
+                        "name": "Merging test",
+                        "type": "list",
+                        "data": [
+                            {
+                                "name": "List 1",
+                                "subitems": [
+                                    {
+                                        "name":"List 1-1"
+                                    },
+                                    {
+                                        "name":"List 1-2",
+                                        "subitems": [
+                                            { "name": "List 1-2-1" },
+                                            { "name": "List 1-2-2"
+                                            , "subitems": [ { "name": "List 1-2-2-1" } ] }
+                                        ]
+                                    },
+                                    {
+                                        "name": "List 1-3"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "List 2"
+                            }
+                        ],
+                        "figure": [{
+                                "path": "",
+                                "align": "",
+                                "size": ""
+                            }
+                        ],
+                        "subsection": [{
+                                "title": "Why we create Docogen?",
+                                "content": [{
+                                        "name": "Why we create Docogen?",
+                                        "type": "text",
+                                        "data": [{
+                                                "info": "Building your document and website together."
+                                            }, {
+                                                "info": "Generate a beautiful introduction paper with simple command."
+                                            }
+                                        ],
+                                        "figure": [{
+                                                "path": "",
+                                                "align": "",
+                                                "size": ""
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }],
+            "reference": [{
+                    "name": "ToolBuddy",
+                    "content": "A good, non-profit organization."
+                }
+            ]
+        }
+    ],
+    "reference": [
+        {
+            "name": "Kevin Cyu",
+            "content": "From NCKU, personal website: https://github.com/kevinbird61"
+        }
+    ],
+    "version": "1.0.0"
+}

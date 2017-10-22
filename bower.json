@@ -1,0 +1,31 @@
+{
+  "name": "nsslab_website",
+  "dependencies": {
+    "react": "^0.14.9 || >=15.3.0",
+    "popper.js": "^1.12.5",
+    "magnific-popup": "^1.1.0",
+    "semantic": "semantic-ui#^2.2.13",
+    "jquery": "^3.2.1"
+  },
+  "description": "docoGen UI",
+  "main": "",
+  "keywords": [
+    "docoGen"
+  ],
+  "authors": [
+    "Yung-Sheng Lu"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toolbuddy/docogen_ui/issues"
+  },
+  "homepage": "https://github.com/toolbuddy/docogen_ui#readme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
