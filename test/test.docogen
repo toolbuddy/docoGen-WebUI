@@ -27,125 +27,121 @@
         ]
     },
     "article": [{
-            "article": [{
-                "title": "Getting Start1",
-                "priority": 0,
-                "content": [{
-                        "name": "Merging test",
-                        "type": "text",
-                        "data": [{
-                                "info": "Building your document and website together."
-                            }, {
-                                "info": "New feature support. Next-line testing."
-                            }
-                        ],
-                        "figure": [{
-                                "path": "",
-                                "align": "",
-                                "size": ""
-                            }
-                        ],
-                        "subsection": [{
-                                "title": "Why we create Docogen?",
-                                "content": [{
-                                        "name": "Why we create Docogen?",
-                                        "type": "text",
-                                        "data": [{
-                                                "info": "Building your document and website together."
-                                            }, {
-                                                "info": "Generate a beautiful introduction paper with simple command."
-                                            }
-                                        ],
-                                        "figure": [{
-                                                "path": "",
-                                                "align": "",
-                                                "size": ""
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
+        "title": "Getting Start1",
+        "priority": 0,
+        "content": [{
+                "name": "Merging test",
+                "type": "text",
+                "data": [{
+                        "info": "Building your document and website together."
+                    }, {
+                        "info": "New feature support. Next-line testing."
                     }
-                ]
-            }],
-            "reference": [{
-                    "name": "ToolBuddy",
-                    "content": "A good, non-profit organization."
+                ],
+                "figure": [{
+                        "path": "",
+                        "align": "",
+                        "size": ""
+                    }
+                ],
+                "subsection": [{
+                    "title": "Why we create Docogen?",
+                    "content": [{
+                            "name": "Why we create Docogen?",
+                            "type": "text",
+                            "data": [{
+                                    "info": "Building your document and website together."
+                                }, {
+                                    "info": "Generate a beautiful introduction paper with simple command."
+                                }
+                            ],
+                            "figure": [{
+                                    "path": "",
+                                    "align": "",
+                                    "size": ""
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
-        }, {
-            "article": [{
-                "title": "Getting Start2",
-                "priority": 1,
-                "content": [{
-                        "name": "Merging test",
-                        "type": "list",
-                        "data": [
-                            {
-                                "name": "List 1",
-                                "subitems": [
-                                    {
-                                        "name":"List 1-1"
-                                    },
-                                    {
-                                        "name":"List 1-2",
-                                        "subitems": [
-                                            { "name": "List 1-2-1" },
-                                            { "name": "List 1-2-2"
-                                            , "subitems": [ { "name": "List 1-2-2-1" } ] }
-                                        ]
-                                    },
-                                    {
-                                        "name": "List 1-3"
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "List 2"
-                            }
-                        ],
-                        "figure": [{
-                                "path": "",
-                                "align": "",
-                                "size": ""
-                            }
-                        ],
-                        "subsection": [{
-                                "title": "Why we create Docogen?",
-                                "content": [{
-                                        "name": "Why we create Docogen?",
-                                        "type": "text",
-                                        "data": [{
-                                                "info": "Building your document and website together."
-                                            }, {
-                                                "info": "Generate a beautiful introduction paper with simple command."
-                                            }
-                                        ],
-                                        "figure": [{
-                                                "path": "",
-                                                "align": "",
-                                                "size": ""
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }],
-            "reference": [{
-                    "name": "ToolBuddy",
-                    "content": "A good, non-profit organization."
+        }],
+        "reference": [{
+                "name": "ToolBuddy",
+                "content": "A good, non-profit organization."
+            }
+        ]
+    }, {
+        "title": "Getting Start2",
+        "priority": 1,
+        "content": [{
+            "name": "Merging test",
+            "type": "list",
+            "data": [
+                {
+                    "name": "List 1",
+                    "subitems": [
+                        {
+                            "name":"List 1-1"
+                        },
+                        {
+                            "name":"List 1-2",
+                            "subitems": [
+                                { "name": "List 1-2-1" },
+                                { "name": "List 1-2-2"
+                                , "subitems": [ { "name": "List 1-2-2-1" } ] }
+                            ]
+                        },
+                        {
+                            "name": "List 1-3"
+                        }
+                    ]
+                },
+                {
+                    "name": "List 2"
+                }
+            ],
+            "figure": [{
+                    "path": "",
+                    "align": "",
+                    "size": ""
+                }
+            ],
+            "subsection": [{
+                    "title": "Why we create Docogen?",
+                    "content": [{
+                            "name": "Why we create Docogen?",
+                            "type": "text",
+                            "data": [{
+                                    "info": "Building your document and website together."
+                                }, {
+                                    "info": "Generate a beautiful introduction paper with simple command."
+                                }
+                            ],
+                            "figure": [{
+                                    "path": "",
+                                    "align": "",
+                                    "size": ""
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
-        }
-    ],
+        }],
+        "reference": [{
+                "name": "ToolBuddy",
+                "content": "A good, non-profit organization."
+            }
+        ]
+    }],
     "reference": [
         {
             "name": "Kevin Cyu",
             "content": "From NCKU, personal website: https://github.com/kevinbird61"
+        },  {
+            "name": "Yung-Sheng Lu",
+            "content": "From NCTU, personal website: https://github.com/yungshenglu"
         }
     ],
     "version": "1.0.0"

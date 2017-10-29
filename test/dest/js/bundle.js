@@ -1010,10 +1010,6 @@ var Subsection = function (_React$Component) {
 
 exports.default = Subsection;
 
-/**
- * 
- */
-
 },{"./Subarticle.jsx":8,"./Title.jsx":10,"react":"react","semantic-ui-react":631}],10:[function(require,module,exports){
 'use strict';
 
@@ -2075,6 +2071,10 @@ module.exports={
 		{
 			"name": "Kevin Cyu",
 			"content": "From NCKU, personal website: https://github.com/kevinbird61"
+		},
+		{
+			"name": "Yung-Sheng Lu",
+			"content": "From NCTU, personal website: https://github.com/yungshenglu"
 		}
 	]
 }
@@ -2084,53 +2084,48 @@ module.exports={
 	"data": [
 		{
 			"chapter": 1,
+			"title": "Getting Start1",
 			"route": "Getting_Start1",
 			"page": {
 				"article": [
 					{
-						"title": "Getting Start1",
-						"priority": 0,
-						"content": [
+						"name": "Merging test",
+						"type": "text",
+						"data": [
 							{
-								"name": "Merging test",
-								"type": "text",
-								"data": [
+								"info": "Building your document and website together."
+							},
+							{
+								"info": "New feature support. Next-line testing."
+							}
+						],
+						"figure": [
+							{
+								"path": "",
+								"align": "",
+								"size": ""
+							}
+						],
+						"subsection": [
+							{
+								"title": "Why we create Docogen?",
+								"content": [
 									{
-										"info": "Building your document and website together."
-									},
-									{
-										"info": "New feature support. Next-line testing."
-									}
-								],
-								"figure": [
-									{
-										"path": "",
-										"align": "",
-										"size": ""
-									}
-								],
-								"subsection": [
-									{
-										"title": "Why we create Docogen? 1",
-										"content": [
+										"name": "Why we create Docogen?",
+										"type": "text",
+										"data": [
 											{
-												"name": "Why we create Docogen?",
-												"type": "text",
-												"data": [
-													{
-														"info": "Building your document and website together."
-													},
-													{
-														"info": "Generate a beautiful introduction paper with simple command."
-													}
-												],
-												"figure": [
-													{
-														"path": "",
-														"align": "",
-														"size": ""
-													}
-												]
+												"info": "Building your document and website together."
+											},
+											{
+												"info": "Generate a beautiful introduction paper with simple command."
+											}
+										],
+										"figure": [
+											{
+												"path": "",
+												"align": "",
+												"size": ""
 											}
 										]
 									}
@@ -2149,77 +2144,72 @@ module.exports={
 		},
 		{
 			"chapter": 2,
+			"title": "Getting Start2",
 			"route": "Getting_Start2",
 			"page": {
 				"article": [
 					{
-						"title": "Getting Start2",
-						"priority": 1,
-						"content": [
+						"name": "Merging test",
+						"type": "list",
+						"data": [
 							{
-								"name": "Merging test",
-								"type": "list",
-								"data": [
+								"name": "List 1",
+								"subitems": [
 									{
-										"name": "List 1",
+										"name": "List 1-1"
+									},
+									{
+										"name": "List 1-2",
 										"subitems": [
 											{
-												"name": "List 1-1"
+												"name": "List 1-2-1"
 											},
 											{
-												"name": "List 1-2",
+												"name": "List 1-2-2",
 												"subitems": [
 													{
-														"name": "List 1-2-1"
-													},
-													{
-														"name": "List 1-2-2",
-														"subitems": [
-															{
-																"name": "List 1-2-2-1"
-															}
-														]
+														"name": "List 1-2-2-1"
 													}
 												]
-											},
-											{
-												"name": "List 1-3"
 											}
 										]
 									},
 									{
-										"name": "List 2"
+										"name": "List 1-3"
 									}
-								],
-								"figure": [
+								]
+							},
+							{
+								"name": "List 2"
+							}
+						],
+						"figure": [
+							{
+								"path": "",
+								"align": "",
+								"size": ""
+							}
+						],
+						"subsection": [
+							{
+								"title": "Why we create Docogen?",
+								"content": [
 									{
-										"path": "",
-										"align": "",
-										"size": ""
-									}
-								],
-								"subsection": [
-									{
-										"title": "Why we create Docogen? 1",
-										"content": [
+										"name": "Why we create Docogen?",
+										"type": "text",
+										"data": [
 											{
-												"name": "Why we create Docogen?",
-												"type": "text",
-												"data": [
-													{
-														"info": "Building your document and website together."
-													},
-													{
-														"info": "Generate a beautiful introduction paper with simple command."
-													}
-												],
-												"figure": [
-													{
-														"path": "",
-														"align": "",
-														"size": ""
-													}
-												]
+												"info": "Building your document and website together."
+											},
+											{
+												"info": "Generate a beautiful introduction paper with simple command."
+											}
+										],
+										"figure": [
+											{
+												"path": "",
+												"align": "",
+												"size": ""
 											}
 										]
 									}
@@ -2359,7 +2349,7 @@ var App = function (_React$Component) {
                         _react2.default.createElement(_Sidebar_Item2.default, { chapter: 'Introduction', to: '/' }),
                         routesArr.map(function (item, i) {
                             return _react2.default.createElement(_Sidebar_Item2.default, {
-                                chapter: item.chapter + '. ' + item.page.article[0].title,
+                                chapter: item.chapter + '. ' + item.title,
                                 to: '/' + item.route });
                         })
                     ),
@@ -2552,16 +2542,15 @@ var Page = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
-            var pageArr = this.props.page;
-            var contentArr = pageArr.content;
+            var dataArr = this.props.page;
 
             return _react2.default.createElement(
                 _semanticUiReact.Container,
                 { textAlign: 'left' },
-                contentArr.map(function (item, i) {
+                dataArr.map(function (item, i) {
                     return _react2.default.createElement(_Section2.default, {
                         content: item,
-                        title: pageArr.title });
+                        title: item.name });
                 })
             );
         }
@@ -2664,7 +2653,7 @@ exports.default = _react2.default.createElement(
             component: function component(props) {
                 return _react2.default.createElement(_Page2.default, {
                     chapter: item.chapter,
-                    page: item.page.article[0] });
+                    page: item.page.article });
             } });
     })
 );
