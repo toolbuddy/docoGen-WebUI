@@ -40,6 +40,23 @@ docoGen_UI.generate_html = function(src_path, dst_path, callbacks) {
     docoGen_UI.build_html(dst_path);
 }
 
+// An Extension support for directory 
+docoGen_UI.generate_html_ex = function(src,dst,callback){
+    // collect files from src
+    this.export_docoGen(src,{},function(err,json_obj){
+        // merged docogen jsonobj (final result)
+        // Generate routes
+        engine.generate_routes(json_obj.article);
+        // Generate components
+        engine.generate_header(json_obj.title, json_obj.version);
+        engine.generate_author(json_obj.author);
+        engine.generate_abstract(json_obj.abstract.content);
+        engine.generate_reference(json_obj.reference);
+        // Build HTML file
+        docoGen_UI.build_html(dst);
+    })
+}
+
 docoGen_UI.build_html = function(dst_path) {
      /* Gulp task - Initialize */
      let inital = spawn('gulp', ['-p', dst_path, '--gulpfile', '../gulpfile.js', 'initial']);

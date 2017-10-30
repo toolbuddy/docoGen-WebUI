@@ -1,6 +1,10 @@
 const docoGen_UI = require('../main');
 
-var t = docoGen_UI.generate_html('./test.docogen', __dirname + '/dest', function(err, msg) {
+/*var t = docoGen_UI.generate_html('./test.docogen', __dirname + '/dest', function(err, msg) {
+    console.log(msg);
+});*/
+
+docoGen_UI.generate_html_ex(__dirname, __dirname + '/dest', function(err, msg) {
     console.log(msg);
 });
 

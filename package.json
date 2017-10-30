@@ -1,10 +1,10 @@
 {
-  "name": "docogen_ui",
-  "description": "docoGen UI",
+  "name": "docogen-html-ui",
+  "description": "docoGen html module",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/toolbuddy/docogen_ui"
+    "url": "https://github.com/toolbuddy/docogen-html-ui.git"
   },
   "config": {
     "port": 3000
@@ -62,6 +62,7 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-cssmin": "^0.1.7",
+    "gulp-compile-jsx": "^1.0.3",
     "gulp-if": "^2.0.0",
     "gulp-less": "^3.0.3",
     "gulp-plumber": "^1.0.1",
