@@ -36,7 +36,7 @@ class Section extends React.Component {
                     title={dataArr.name}
                     type={dataArr.type} />
                 {
-                    dataArr['subsection'].map(function(item, i) {
+                    dataArr['subarticle'].map(function(item, i) {
                         return (
                             <Subsection
                                 content={item.content[0]}

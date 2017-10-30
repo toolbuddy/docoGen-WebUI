@@ -2,53 +2,48 @@
 	"data": [
 		{
 			"chapter": 1,
+			"title": "Getting Start1",
 			"route": "Getting_Start1",
 			"page": {
 				"article": [
 					{
-						"title": "Getting Start1",
-						"priority": 0,
-						"content": [
+						"name": "Merging test",
+						"type": "text",
+						"data": [
 							{
-								"name": "Merging test",
-								"type": "text",
-								"data": [
+								"info": "Building your document and website together."
+							},
+							{
+								"info": "New feature support. Next-line testing."
+							}
+						],
+						"figure": [
+							{
+								"path": "",
+								"align": "",
+								"size": ""
+							}
+						],
+						"subarticle": [
+							{
+								"title": "Why we create Docogen?",
+								"content": [
 									{
-										"info": "Building your document and website together."
-									},
-									{
-										"info": "New feature support. Next-line testing."
-									}
-								],
-								"figure": [
-									{
-										"path": "",
-										"align": "",
-										"size": ""
-									}
-								],
-								"subsection": [
-									{
-										"title": "Why we create Docogen? 1",
-										"content": [
+										"name": "Why we create Docogen?",
+										"type": "text",
+										"data": [
 											{
-												"name": "Why we create Docogen?",
-												"type": "text",
-												"data": [
-													{
-														"info": "Building your document and website together."
-													},
-													{
-														"info": "Generate a beautiful introduction paper with simple command."
-													}
-												],
-												"figure": [
-													{
-														"path": "",
-														"align": "",
-														"size": ""
-													}
-												]
+												"info": "Building your document and website together."
+											},
+											{
+												"info": "Generate a beautiful introduction paper with simple command."
+											}
+										],
+										"figure": [
+											{
+												"path": "",
+												"align": "",
+												"size": ""
 											}
 										]
 									}
@@ -67,77 +62,72 @@
 		},
 		{
 			"chapter": 2,
+			"title": "Getting Start2",
 			"route": "Getting_Start2",
 			"page": {
 				"article": [
 					{
-						"title": "Getting Start2",
-						"priority": 1,
-						"content": [
+						"name": "Merging test",
+						"type": "list",
+						"data": [
 							{
-								"name": "Merging test",
-								"type": "list",
-								"data": [
+								"name": "List 1",
+								"subitems": [
 									{
-										"name": "List 1",
+										"name": "List 1-1"
+									},
+									{
+										"name": "List 1-2",
 										"subitems": [
 											{
-												"name": "List 1-1"
+												"name": "List 1-2-1"
 											},
 											{
-												"name": "List 1-2",
+												"name": "List 1-2-2",
 												"subitems": [
 													{
-														"name": "List 1-2-1"
-													},
-													{
-														"name": "List 1-2-2",
-														"subitems": [
-															{
-																"name": "List 1-2-2-1"
-															}
-														]
+														"name": "List 1-2-2-1"
 													}
 												]
-											},
-											{
-												"name": "List 1-3"
 											}
 										]
 									},
 									{
-										"name": "List 2"
+										"name": "List 1-3"
 									}
-								],
-								"figure": [
+								]
+							},
+							{
+								"name": "List 2"
+							}
+						],
+						"figure": [
+							{
+								"path": "",
+								"align": "",
+								"size": ""
+							}
+						],
+						"subarticle": [
+							{
+								"title": "Why we create Docogen?",
+								"content": [
 									{
-										"path": "",
-										"align": "",
-										"size": ""
-									}
-								],
-								"subsection": [
-									{
-										"title": "Why we create Docogen? 1",
-										"content": [
+										"name": "Why we create Docogen?",
+										"type": "text",
+										"data": [
 											{
-												"name": "Why we create Docogen?",
-												"type": "text",
-												"data": [
-													{
-														"info": "Building your document and website together."
-													},
-													{
-														"info": "Generate a beautiful introduction paper with simple command."
-													}
-												],
-												"figure": [
-													{
-														"path": "",
-														"align": "",
-														"size": ""
-													}
-												]
+												"info": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi."
+											},
+											{
+												"info": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi."
+											}
+										],
+										"figure": [
+											{
+												"path": "",
+												"align": "",
+												"size": ""
 											}
 										]
 									}

@@ -68,7 +68,7 @@ class App extends React.Component {
                         {
                             routesArr.map(function(item, i) {
                                 return <Sidebar_Item
-                                            chapter={item.chapter + '. ' + item.page.article[0].title} 
+                                            chapter={item.chapter + '. ' + item.title} 
                                             to={'/' + item.route} />
                             })
                         }

@@ -23,17 +23,16 @@ class Page extends React.Component {
     }
 
     render() {
-        let pageArr = this.props.page;
-        let contentArr = pageArr.content;
+        let dataArr = this.props.page;
 
         return (
             <Container textAlign='left'>
                 {
-                    contentArr.map(function(item, i) {
+                    dataArr.map(function(item, i) {
                         return (
                             <Section
                                 content={item}
-                                title={pageArr.title} />
+                                title={item.name} />
                         );
                     })
                 }

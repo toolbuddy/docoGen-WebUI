@@ -100,6 +100,7 @@ docoGen_UI.merge_docoGen = function(src_arr, options) {
 
         if (tmp.article != undefined && json_obj.article == undefined) {
             // Set article
+            json_obj.article = tmp.article;
         } else if (tmp.article != undefined && json_obj.article.length > 1) {
             json_obj.article = json_obj.article.concat(tmp.article);
             json_obj.article.sort(function(a, b) {

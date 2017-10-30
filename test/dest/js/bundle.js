@@ -763,7 +763,7 @@ var Section = function (_React$Component) {
                     content: dataArr.data,
                     title: dataArr.name,
                     type: dataArr.type }),
-                dataArr['subsection'].map(function (item, i) {
+                dataArr['subarticle'].map(function (item, i) {
                     return _react2.default.createElement(_Subsection2.default, {
                         content: item.content[0],
                         title: item.title });
@@ -2024,14 +2024,6 @@ exports.default = Sidebar_Version;
 },{"react":"react","semantic-ui-react":631}],21:[function(require,module,exports){
 module.exports={
 	"data": [
-		{
-			"content": [
-				"I went down to the river,",
-				"I set down on the bank.",
-				"I tried to think but couldn't,",
-				"So I jumped in and sank."
-			]
-		}
 	]
 }
 
@@ -2106,7 +2098,7 @@ module.exports={
 								"size": ""
 							}
 						],
-						"subsection": [
+						"subarticle": [
 							{
 								"title": "Why we create Docogen?",
 								"content": [
@@ -2190,7 +2182,7 @@ module.exports={
 								"size": ""
 							}
 						],
-						"subsection": [
+						"subarticle": [
 							{
 								"title": "Why we create Docogen?",
 								"content": [
@@ -2199,10 +2191,10 @@ module.exports={
 										"type": "text",
 										"data": [
 											{
-												"info": "Building your document and website together."
+												"info": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi."
 											},
 											{
-												"info": "Generate a beautiful introduction paper with simple command."
+												"info": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi."
 											}
 										],
 										"figure": [

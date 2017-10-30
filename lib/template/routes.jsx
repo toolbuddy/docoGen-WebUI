@@ -28,7 +28,7 @@ export default (
                             return (
                                 <Page 
                                     chapter={item.chapter} 
-                                    page={item.page.article[0]} />
+                                    page={item.page.article} />
                             );
                         }} />
                 );

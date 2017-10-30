@@ -50,9 +50,7 @@
     "underscore": "^1.8.3",
     "update-json-file": "^1.1.1",
     "write-json": "^2.0.0",
-    "xml2js": "^0.4.15"
-  },
-  "devDependencies": {
+    "xml2js": "^0.4.15",
     "babel-core": "^6.1.19",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
