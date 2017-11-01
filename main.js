@@ -41,9 +41,9 @@ docoGen_UI.generate_html = function(src_path, dst_path, callbacks) {
 }
 
 // An Extension support for directory 
-docoGen_UI.generate_html_ex = function(src,dst,callback){
+docoGen_UI.generate_html_ex = function(src_path, dst_path, callback) {
     // collect files from src
-    this.export_docoGen(src,{},function(err,json_obj){
+    this.export_docoGen(src_path, {}, function(err, json_obj) {
         // merged docogen jsonobj (final result)
         // Generate routes
         engine.generate_routes(json_obj.article);
@@ -53,7 +53,7 @@ docoGen_UI.generate_html_ex = function(src,dst,callback){
         engine.generate_abstract(json_obj.abstract.content);
         engine.generate_reference(json_obj.reference);
         // Build HTML file
-        docoGen_UI.build_html(dst);
+        docoGen_UI.build_html(dst_path);
     })
 }
 
@@ -116,9 +116,8 @@ docoGen_UI.merge_docoGen = function(src_arr, options) {
         }
 
         if (tmp.article != undefined && json_obj.article == undefined) {
-            // Set article
             json_obj.article = tmp.article;
-        } else if (tmp.article != undefined && json_obj.article.length > 1) {
+        } else if (tmp.article != undefined && json_obj.article.length >= 1) {
             json_obj.article = json_obj.article.concat(tmp.article);
             json_obj.article.sort(function(a, b) {
                 return (a.priority - b.priority);

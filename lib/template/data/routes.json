@@ -2,8 +2,8 @@
 	"data": [
 		{
 			"chapter": 1,
-			"title": "Getting Start1",
-			"route": "Getting_Start1",
+			"title": "Getting Start",
+			"route": "Getting_Start",
 			"page": {
 				"article": [
 					{
@@ -51,23 +51,129 @@
 							}
 						]
 					}
-				],
-				"reference": [
-					{
-						"name": "ToolBuddy",
-						"content": "A good, non-profit organization."
-					}
 				]
 			}
 		},
 		{
 			"chapter": 2,
-			"title": "Getting Start2",
-			"route": "Getting_Start2",
+			"title": "Introduction",
+			"route": "Introduction",
 			"page": {
 				"article": [
 					{
-						"name": "Merging test",
+						"name": "What is Docogen?",
+						"type": "text",
+						"data": [
+							{
+								"info": "Building your document and website together."
+							},
+							{
+								"info": "New feature support. Next-line testing."
+							}
+						],
+						"figure": [
+							{
+								"path": "",
+								"align": "",
+								"size": ""
+							}
+						],
+						"subarticle": [
+							{
+								"title": "Why we create Docogen?",
+								"content": [
+									{
+										"name": "Why we create Docogen?",
+										"type": "text",
+										"data": [
+											{
+												"info": "Building your document and website together."
+											},
+											{
+												"info": "Generate a beautiful introduction paper with simple command."
+											}
+										],
+										"figure": [
+											{
+												"path": "",
+												"align": "",
+												"size": ""
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"chapter": 3,
+			"title": "About us",
+			"route": "About_us",
+			"page": {
+				"article": [
+					{
+						"name": "What is toolbuddy\\cite{ToolBuddy}?",
+						"type": "text",
+						"text": "An group of good programmer that solve the problem!",
+						"figure": [
+							{
+								"path": "C:/Users/kevin/Desktop/workspace/docogen/test/images/ToolBuddy-logo.png",
+								"align": "center",
+								"size": ""
+							}
+						],
+						"data": [
+							{
+								"info": "An group of good programmer that solve the problem!"
+							}
+						],
+						"subarticle": [
+							{
+								"title": "How to join toolbuddy?",
+								"content": [
+									{
+										"name": "The way:",
+										"type": "text",
+										"data": [
+											{
+												"info": "Just email to Kevin and pass your github ID and he will find your by himself!"
+											}
+										],
+										"figure": [
+											{
+												"path": "C:/Users/kevin/Desktop/workspace/docogen/test/images/ToolBuddy-logo.png",
+												"align": "center",
+												"size": ""
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"chapter": 4,
+			"title": "Different usage of content",
+			"route": "Different_usage of content",
+			"page": {
+				"article": [
+					{
+						"name": "List Structure",
+						"type": "none",
+						"data": [
+							{
+								"info": "\tList Structure Example: "
+							}
+						]
+					},
+					{
+						"name": "Demo",
 						"type": "list",
 						"data": [
 							{
@@ -108,38 +214,123 @@
 								"size": ""
 							}
 						],
-						"subarticle": [
+						"subarticle": []
+					},
+					{
+						"name": "List",
+						"type": "text",
+						"text": "List Structure",
+						"data": [
 							{
-								"title": "Why we create Docogen?",
-								"content": [
-									{
-										"name": "Why we create Docogen?",
-										"type": "text",
-										"data": [
-											{
-												"info": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi."
-											},
-											{
-												"info": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi."
-											}
-										],
-										"figure": [
-											{
-												"path": "",
-												"align": "",
-												"size": ""
-											}
-										]
-									}
-								]
+								"info": "Listing structure append"
+							},
+							{
+								"info": "New feature support."
 							}
 						]
 					}
-				],
-				"reference": [
+				]
+			}
+		},
+		{
+			"chapter": 5,
+			"title": "Table Demo",
+			"route": "Table_Demo",
+			"page": {
+				"article": [
 					{
-						"name": "ToolBuddy",
-						"content": "A good, non-profit organization."
+						"name": "Table 1",
+						"type": "table",
+						"data": [
+							{
+								"title": "Name",
+								"value": [
+									"Kevin",
+									"Eric",
+									"Lu",
+									"Cyu",
+									"Lai"
+								]
+							},
+							{
+								"title": "Age",
+								"value": [
+									"23",
+									"22",
+									"24",
+									"52",
+									"50"
+								]
+							},
+							{
+								"title": "Job",
+								"value": [
+									"programmer",
+									"student",
+									"engineer",
+									"professor",
+									"soldier"
+								]
+							}
+						],
+						"figure": [],
+						"subarticle": []
+					}
+				]
+			}
+		},
+		{
+			"chapter": 6,
+			"title": "Code listing Demo",
+			"route": "Code_listing Demo",
+			"page": {
+				"article": [
+					{
+						"name": "Code listing 1",
+						"type": "code",
+						"data": [
+							{
+								"lang": "C",
+								"caption": "C mini exampe",
+								"raw": "#include <stdio.h>\n\nint main(){\nreturn 0;}\n"
+							},
+							{
+								"lang": "Python",
+								"caption": "Python example",
+								"src": "C:\\Users\\kevin\\Desktop\\workspace\\docogen\\test\\example.py"
+							}
+						],
+						"figure": [],
+						"subarticle": []
+					}
+				]
+			}
+		},
+		{
+			"chapter": 7,
+			"title": "Formula Demo",
+			"route": "Formula_Demo",
+			"page": {
+				"article": [
+					{
+						"name": "Formula 1",
+						"type": "formula",
+						"data": [
+							{
+								"info": "Now we will introduce the basic equation usage (inline mode): ",
+								"inline": "\\(x^2 + y^2 = z^2\\)"
+							},
+							{
+								"info": "\nThen we can see the display mode: \n",
+								"display": "\\[ x^n + y^n = z^n \\]"
+							},
+							{
+								"info": "\nAnd about equation tag:\n",
+								"equation": "E=mc^2"
+							}
+						],
+						"figure": [],
+						"subarticle": []
 					}
 				]
 			}

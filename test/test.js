@@ -4,7 +4,7 @@ const docoGen_UI = require('../main');
     console.log(msg);
 });*/
 
-docoGen_UI.generate_html_ex(__dirname, __dirname + '/dest', function(err, msg) {
+docoGen_UI.generate_html_ex(__dirname + '/script', __dirname + '/dest', function(err, msg) {
     console.log(msg);
 });
 
