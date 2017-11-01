@@ -34,7 +34,7 @@ class Subarticle extends React.Component {
             return ( 
                  <div>
                     <Title 
-                        as='h4' 
+                        as='h2' 
                         text={this.props.title} />
                     {
                          dataArr.map(function(item, i) {

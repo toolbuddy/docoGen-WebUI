@@ -26,7 +26,7 @@ class Figure_Item extends React.Component {
             <Card>
                 <Image src={this.props.img} />
                 <Card.Header textAlign='center'>
-                    { 'Figure: ' + this.props.title }
+                    { this.props.caption }
                 </Card.Header>
             </Card>
         );

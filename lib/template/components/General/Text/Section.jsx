@@ -6,8 +6,8 @@ import { Divider, Segment } from 'semantic-ui-react';
 
 /* Import components */
 import Article from './Article.jsx';
+import Figure from '../Figure/Figure.jsx';
 import Subsection from './Subsection.jsx';
-import Title from './Title.jsx';
 
 /**
  * @class Section
@@ -25,28 +25,83 @@ class Section extends React.Component {
     
     render() {
         let dataArr = this.props.content;
-
-        return (
-            <Segment style={{ border: 'none', paddingTop: '0' }} vertical>
-                <Title 
-                    as='h1' 
-                    text={this.props.title} />
-                <Article 
-                    content={dataArr.data}
-                    title={dataArr.name}
-                    type={dataArr.type} />
-                {
-                    dataArr['subarticle'].map(function(item, i) {
-                        return (
-                            <Subsection
-                                content={item.content[0]}
-                                title={item.title} />
-                        )
-                    })
+        
+        if (dataArr.type === 'none') {
+            return (
+                <Segment style={{ border: 'none', paddingTop: '0' }} vertical>
+                    <Article 
+                        content={dataArr.data}
+                        title={dataArr.name}
+                        type={dataArr.type} />
+                </Segment>
+            );
+        } else {
+            if (dataArr.subarticle != undefined) {
+                if (dataArr.figure != undefined) {
+                    return (
+                        <Segment style={{ border: 'none', paddingTop: '0' }} vertical>
+                            <Article 
+                                content={dataArr.data}
+                                title={dataArr.name}
+                                type={dataArr.type} />
+                            {
+                                dataArr['subarticle'].map(function(item, i) {
+                                    return (
+                                        <Subsection
+                                            content={item.content[0]}
+                                            title={item.title} />
+                                    );
+                                })
+                            }
+                            <Figure 
+                                figPerRow={4}
+                                image={dataArr.figure} />
+                        </Segment>
+                    );
+                } else {
+                    return (
+                        <Segment style={{ border: 'none', paddingTop: '0' }} vertical>
+                            <Article 
+                                content={dataArr.data}
+                                title={dataArr.name}
+                                type={dataArr.type} />
+                            {
+                                dataArr['subarticle'].map(function(item, i) {
+                                    return (
+                                        <Subsection
+                                            content={item.content[0]}
+                                            title={item.title} />
+                                    );
+                                })
+                            }
+                        </Segment>
+                    );
                 }
-                <Divider />
-            </Segment>
-        );
+            } else {
+                if (dataArr.figure != undefined) {
+                    return (
+                        <Segment style={{ border: 'none', paddingTop: '0' }} vertical>
+                            <Article 
+                                content={dataArr.data}
+                                title={dataArr.name}
+                                type={dataArr.type} />
+                            <Figure 
+                                figPerRow={4}
+                                image={dataArr.figure} />
+                        </Segment>
+                    );
+                } else {
+                    return (
+                        <Segment style={{ border: 'none', paddingTop: '0' }} vertical>
+                            <Article 
+                                content={dataArr.data}
+                                title={dataArr.name}
+                                type={dataArr.type} />
+                        </Segment>
+                    );
+                }
+            }
+        }
     }
 }
 

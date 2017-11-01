@@ -5,7 +5,7 @@ import React from 'react';
 import { Card, Grid, Image } from 'semantic-ui-react';
 
 /* Import components */
-import FigureItem from './FigureItem.jsx';
+import Figure_Item from './Figure_Item.jsx';
 import Title from '../Text/Title';
 
 /**
@@ -23,11 +23,17 @@ class Figure extends React.Component {
     }
     
     render() {
+        let dataArr = this.props.image;
+
         return (
             <Card.Group itemsPerRow={this.props.figPerRow}>
                 {
-                    this.props.image.map(function(figItem, i) {
-                        return <FigureItem img={figItem.img} title={figItem.title} />;
+                    dataArr.map(function(figItem, i) {
+                        return (
+                            <Figure_Item
+                                caption={figItem.caption}
+                                img={figItem.path} />
+                        )
                     })
                 }
             </Card.Group>

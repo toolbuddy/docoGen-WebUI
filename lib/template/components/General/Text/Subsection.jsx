@@ -6,7 +6,6 @@ import { Divider, Segment } from 'semantic-ui-react';
 
 /* Import components */
 import Subarticle from './Subarticle.jsx';
-import Title from './Title.jsx';
 
 /**
  * @class Subsection
@@ -27,15 +26,11 @@ class Subsection extends React.Component {
 
         return (
             <Segment style={{ border: 'none' }} vertical>
-                <Title 
-                    as='h3' 
-                    text={this.props.title} />
                 <Subarticle 
                     content={dataArr.data}
                     title={dataArr.name}
                     type={dataArr.type} />
-                
-                <Divider hidden />
+                <Divider />
             </Segment>
         );
     }

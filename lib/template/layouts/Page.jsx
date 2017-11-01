@@ -31,8 +31,7 @@ class Page extends React.Component {
                     dataArr.map(function(item, i) {
                         return (
                             <Section
-                                content={item}
-                                title={item.name} />
+                                content={item} />
                         );
                     })
                 }

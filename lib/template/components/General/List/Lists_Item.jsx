@@ -89,7 +89,7 @@ class Lists_Item extends React.Component {
                         dataArr.map(function(item, i) {
                             return (
                                 <List.Item>
-                                    <ListItemContent 
+                                    <Lists_Content 
                                         content={item}
                                         listType='ul' />
                                 </List.Item>

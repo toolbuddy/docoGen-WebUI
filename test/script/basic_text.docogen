@@ -5,6 +5,13 @@
             "priority": 1,
             "content": [
                 {
+                    "name": "List Structure",
+                    "type": "none",
+                    "data": [
+                        { "info": "\tList Structure Example: " }
+                    ]
+                },
+                {
                     "name": "What is Docogen?",
                     "type": "text",
                     "data": [
@@ -19,7 +26,8 @@
                         {
                             "path": "../img/square-image.png",
                             "align": "",
-                            "size": ""
+                            "size": "",
+                            "caption": "Figure Caption"
                         }
                     ],
                     "subarticle": [
@@ -39,9 +47,10 @@
                                     ],
                                     "figure": [
                                         {
-                                            "path": "",
+                                            "path": "../img/square-image.png",
                                             "align": "",
-                                            "size": ""
+                                            "size": "",
+                                            "caption": "Figure Caption"
                                         }
                                     ]
                                 }

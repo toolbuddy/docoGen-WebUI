@@ -17,9 +17,10 @@
                     ],
                     "figure": [
                         {
-                            "path": "",
+                            "path": "../img/square-image.png",
                             "align": "",
-                            "size": ""
+                            "size": "",
+                            "caption": "Figure Caption"
                         }
                     ],
                     "subarticle": [
@@ -39,9 +40,10 @@
                                     ],
                                     "figure": [
                                         {
-                                            "path": "",
+                                            "path": "../img/square-image.png",
                                             "align": "",
-                                            "size": ""
+                                            "size": "",
+                                            "caption": "Figure Caption"
                                         }
                                     ]
                                 }
