@@ -2024,6 +2024,10 @@ module.exports={
 		"I went down to the river,",
 		"I set down on the bank.",
 		"I tried to think but couldn't,",
+		"So I jumped in and sank.",
+		"I went down to the river,",
+		"I set down on the bank.",
+		"I tried to think but couldn't,",
 		"So I jumped in and sank."
 	]
 }
