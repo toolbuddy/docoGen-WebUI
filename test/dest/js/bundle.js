@@ -2024,6 +2024,14 @@ exports.default = Sidebar_Version;
 },{"react":"react","semantic-ui-react":631}],21:[function(require,module,exports){
 module.exports={
 	"data": [
+		{
+			"content": [
+				"I went down to the river,",
+				"I set down on the bank.",
+				"I tried to think but couldn't,",
+				"So I jumped in and sank."
+			]
+		}
 	]
 }
 
@@ -2031,18 +2039,10 @@ module.exports={
 module.exports={
 	"data": [
 		{
-			"name": "Kevin Cyu 瞿旭民",
+			"name": "Kevin Cyu \\begin{CJK}{UTF8}((瞿旭民)\\end{CJK} \\cite{Kevin Cyu}",
 			"email": "kevinbird61@gmail.com",
-			"phone": "+886-912-345-678",
-			"unit": "Intelligent Mobile Service Laboratory, CSIE, NCKU",
+			"phone": "0912345678",
 			"website": "https://github.com/kevinbird61"
-		},
-		{
-			"name": "Yung-Sheng Lu 陸勇盛",
-			"email": "yungshenglu1994@gmail.com",
-			"phone": "+886-912-345-678",
-			"unit": "Networking and Sensing Systems Laboratory, CS, NCTU",
-			"website": "https://github.com/yungshenglu"
 		}
 	]
 }
@@ -2051,8 +2051,7 @@ module.exports={
 module.exports={
 	"data": [
 		{
-			"title": "docoGen Example",
-			"vers": "1.0.0"
+			"title": "Docogen Example"
 		}
 	]
 }
@@ -2060,6 +2059,14 @@ module.exports={
 },{}],24:[function(require,module,exports){
 module.exports={
 	"data": [
+		{
+			"name": "Kevin Cyu",
+			"content": "From NCKU, personal website: https://github.com/kevinbird61"
+		},
+		{
+			"name": "ToolBuddy",
+			"content": "A good, non-profit organization."
+		},
 		{
 			"name": "Kevin Cyu",
 			"content": "From NCKU, personal website: https://github.com/kevinbird61"
@@ -2076,12 +2083,12 @@ module.exports={
 	"data": [
 		{
 			"chapter": 1,
-			"title": "Getting Start1",
-			"route": "Getting_Start1",
+			"title": "Introduction",
+			"route": "Introduction",
 			"page": {
 				"article": [
 					{
-						"name": "Merging test",
+						"name": "What is Docogen?",
 						"type": "text",
 						"data": [
 							{
@@ -2124,96 +2131,6 @@ module.exports={
 								]
 							}
 						]
-					}
-				],
-				"reference": [
-					{
-						"name": "ToolBuddy",
-						"content": "A good, non-profit organization."
-					}
-				]
-			}
-		},
-		{
-			"chapter": 2,
-			"title": "Getting Start2",
-			"route": "Getting_Start2",
-			"page": {
-				"article": [
-					{
-						"name": "Merging test",
-						"type": "list",
-						"data": [
-							{
-								"name": "List 1",
-								"subitems": [
-									{
-										"name": "List 1-1"
-									},
-									{
-										"name": "List 1-2",
-										"subitems": [
-											{
-												"name": "List 1-2-1"
-											},
-											{
-												"name": "List 1-2-2",
-												"subitems": [
-													{
-														"name": "List 1-2-2-1"
-													}
-												]
-											}
-										]
-									},
-									{
-										"name": "List 1-3"
-									}
-								]
-							},
-							{
-								"name": "List 2"
-							}
-						],
-						"figure": [
-							{
-								"path": "",
-								"align": "",
-								"size": ""
-							}
-						],
-						"subarticle": [
-							{
-								"title": "Why we create Docogen?",
-								"content": [
-									{
-										"name": "Why we create Docogen?",
-										"type": "text",
-										"data": [
-											{
-												"info": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi."
-											},
-											{
-												"info": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi."
-											}
-										],
-										"figure": [
-											{
-												"path": "",
-												"align": "",
-												"size": ""
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"reference": [
-					{
-						"name": "ToolBuddy",
-						"content": "A good, non-profit organization."
 					}
 				]
 			}
