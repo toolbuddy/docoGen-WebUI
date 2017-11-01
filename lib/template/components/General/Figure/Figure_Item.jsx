@@ -5,13 +5,13 @@ import React from 'react';
 import { Card, Image } from 'semantic-ui-react';
 
 /* Import components */
-import Title from './Title.jsx';
+import Title from '../Text/Title.jsx';
 
 /**
- * @class FigureItem
+ * @class Figure_Item
  * @extends {React.Component}
  */
-class FigureItem extends React.Component {
+class Figure_Item extends React.Component {
     constructor(props) {
         super(props);
         this.onChange = this.onChange.bind(this);
@@ -34,4 +34,4 @@ class FigureItem extends React.Component {
 }
 
 /* Export module */
-export default FigureItem;
+export default Figure_Item;

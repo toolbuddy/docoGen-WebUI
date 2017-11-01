@@ -5,7 +5,7 @@ import React from 'react';
 import { List } from 'semantic-ui-react';
 
 /* Import components */
-import ListItem from './ListItem.jsx';
+import Lists_Item from './Lists_Item.jsx';
 
 /**
  * listParam: Define the parameter of lists
@@ -54,7 +54,7 @@ class Lists extends React.Component {
 
         return (
             <div>
-                <ListItem
+                <Lists_Item
                     bulleted={thisList.bulleted}
                     celled={thisList.celled}
                     content={this.props.content}

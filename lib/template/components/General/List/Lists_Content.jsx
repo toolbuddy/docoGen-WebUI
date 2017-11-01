@@ -5,13 +5,13 @@ import React from 'react';
 import { List } from 'semantic-ui-react';
 
 /* Import components */
-import ListList from './ListList.jsx';
+import Lists_List from './Lists_List.jsx';
 
 /**
- * @class ListItemContent
+ * @class Lists_Content
  * @extends {React.Component}
  */
-class ListItemContent extends React.Component {
+class Lists_Content extends React.Component {
     constructor(props) {
         super(props);
         this.onChange = this.onChange.bind(this);
@@ -34,7 +34,7 @@ class ListItemContent extends React.Component {
                 return ( 
                     <div>
                         { this.props.content['name'] }
-                        <ListList 
+                        <Lists_List 
                             content={this.props.content['subitems']}
                             listType={this.props.listType} />
                     </div>
@@ -51,10 +51,4 @@ class ListItemContent extends React.Component {
 }
 
 /* Export module */
-export default ListItemContent;
-
-/**
- *                     <ListList 
-                        content={this.props.content['subitems']}
-                        listType={this.props.listType} />
- */
+export default Lists_Content;
