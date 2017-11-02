@@ -32,7 +32,8 @@ const dependencies = [
 ];
 
 /* Get dest parameter */
-const dest = argv.p[argv.p.length - 1] == '/' ? argv.p : argv.p + '/';
+//const dest = argv.p[argv.p.length - 1] == '/' ? argv.p : argv.p + '/';
+const dest = argv.p + '/';
 
 /* Combine all JavaScript libraries into a single file for fewer HTTP requests */
 gulp.task('vendor', function() {
