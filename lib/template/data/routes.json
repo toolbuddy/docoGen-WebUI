@@ -307,13 +307,18 @@
 						"data": [
 							{
 								"lang": "C",
-								"caption": "C mini exampe",
-								"raw": "#include <stdio.h>\n\nint main(){\nreturn 0;}\n"
+								"caption": "example.c",
+								"raw": "#include <stdio.h>\n\nint main(void) {\n    return 0;\n}\n"
+							},
+							{
+								"lang": "CPP",
+								"caption": "example.cpp",
+								"raw": "#include <iostream>\n\nusing namespace std;\n\nint main(void) {\n    return 0;\n}\n"
 							},
 							{
 								"lang": "Python",
-								"caption": "Python example",
-								"src": "C:\\Users\\kevin\\Desktop\\workspace\\docogen\\test\\example.py"
+								"caption": "example.py",
+								"src": "/Users/yungshenglu/Project/docoGen-html-ui/test/example.py"
 							}
 						],
 						"figure": [],

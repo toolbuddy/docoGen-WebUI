@@ -9,6 +9,11 @@
             "email": "kevinbird61@gmail.com",
             "phone": "0912345678",
             "website": "https://github.com/kevinbird61"
+        }, {
+            "name": "Yung-Sheng Lu \\begin{CJK}{UTF8}((陸勇盛)\\end{CJK} \\cite{Yung-Sheng Lu}",
+            "email": "yungshenglu1994@gmail.com",
+            "phone": "0912345678",
+            "website": "https://github.com/yungshenglu"
         }
     ],
     "abstract":{
@@ -25,6 +30,9 @@
         {
             "name": "Kevin Cyu",
             "content": "From NCKU, personal website: https://github.com/kevinbird61"
+        }, {
+            "name": "Yung-Sheng Lu",
+            "content": "From NCTU, personal website: https://github.com/yungshenglu"
         }
     ]
 }

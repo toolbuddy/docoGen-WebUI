@@ -108,7 +108,8 @@ class Article extends React.Component {
                                 <Code 
                                     caption={item.caption}
                                     lang={item.lang}
-                                    raw={item.raw} />
+                                    raw={item.raw}
+                                    src={item.src} />
                             );
                         })
                     }
