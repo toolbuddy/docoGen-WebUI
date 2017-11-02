@@ -8,7 +8,6 @@ const docogen = require('docogen');
 const spawn = require('child_process').spawn;
 const filehound = require("filehound");
 const fs = require('fs');
-const fsx = require('fs-extra');
 const os = require('os');
 const path = require('path');
 const randomstring = require('randomstring');
@@ -21,11 +20,11 @@ const docoGen_UI = {};
 
 docoGen_UI.generate_html = function(src_path, dst_path, callbacks) {
     // Read docogen file
-    fs.readFile(src_path, function(err, data) {  
+    fs.readFile(src_path, function(err, data) {
         if (err) throw err;
-        
+
         let json_obj = JSON.parse(data);
-        
+
         // Generate routes
         engine.generate_routes(json_obj.article);
 
@@ -35,7 +34,7 @@ docoGen_UI.generate_html = function(src_path, dst_path, callbacks) {
         engine.generate_abstract(json_obj.abstract.content);
         engine.generate_reference(json_obj.reference);
     });
-    
+
     // Build HTML file
     docoGen_UI.build_html(dst_path);
 }
@@ -58,33 +57,33 @@ docoGen_UI.generate_html_ex = function(src_path, dst_path, callback) {
 }
 
 docoGen_UI.build_html = function(dst_path) {
-     /* Gulp task - Initialize */
-     let inital = spawn('gulp', ['-p', dst_path, '--gulpfile', '../gulpfile.js', 'initial']);
-     inital.stdout.on('data', function(data) {
-         console.log(data.toString());
-     });
- 
-     inital.stderr.on('data', function(data) {
-         console.log(data.toString());
-     });
- 
-     inital.on('exit', function(code) {
-         console.log('Gulp - Initialize completed');
-     });
- 
-     /* Gulp task - Build */
-     let build = spawn('gulp', ['-p', dst_path, '--gulpfile', '../gulpfile.js', 'build']);
-     build.stdout.on('data', function(data) {
-         console.log(data.toString());
-     });
- 
-     build.stderr.on('data', function(data) {
-         console.log(data.toString());
-     });
- 
-     build.on('exit', function(code) {
-         console.log('Gulp - Build completed');
-     });
+    /* Gulp task - Initialize */
+    let inital = spawn('gulp', ['-p', dst_path, '--gulpfile', '../gulpfile.js', 'initial']);
+    inital.stdout.on('data', function(data) {
+        console.log(data.toString());
+    });
+
+    inital.stderr.on('data', function(data) {
+        console.log(data.toString());
+    });
+
+    inital.on('exit', function(code) {
+        console.log('Gulp - Initialize completed');
+    });
+
+    /* Gulp task - Build */
+    let build = spawn('gulp', ['-p', dst_path, '--gulpfile', '../gulpfile.js', 'build']);
+    build.stdout.on('data', function(data) {
+        console.log(data.toString());
+    });
+
+    build.stderr.on('data', function(data) {
+        console.log(data.toString());
+    });
+
+    build.on('exit', function(code) {
+        console.log('Gulp - Build completed');
+    });
 }
 
 docoGen_UI.merge_docoGen = function(src_arr, options) {

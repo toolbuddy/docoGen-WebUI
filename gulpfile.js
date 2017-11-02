@@ -13,7 +13,6 @@ const uglify = require('gulp-uglify');
 const util = require('gulp-util');
 const babelify = require('babelify');
 const browserify = require('browserify');
-const fs = require('fs');
 const watchify = require('watchify');
 const argv = require('yargs').argv;
 
@@ -68,9 +67,9 @@ gulp.task('browserify', ['browserify-vendor'], function() {
     return browserify({
             entries: './lib/template/main.jsx',
             extensions: [
-                '.js', 
-                '.json', 
-                '.es6', 
+                '.js',
+                '.json',
+                '.es6',
                 '.jsx'
             ],
             debug: false
@@ -128,9 +127,8 @@ gulp.task('browserify-watch', ['browserify-vendor'], function() {
             .pipe(srcStream('bundle.js'))
             .pipe(buffer())
             .pipe(srcMaps.init({
-                    loadMaps: true
-                }
-            ))
+                loadMaps: true
+            }))
             .pipe(srcMaps.write('.'))
             .pipe(gulp.dest(dest + 'js/'));
     }
@@ -153,7 +151,7 @@ gulp.task('watch', function() {
 });
 
 /* Duplicate themes */
-gulp.task('themes', function () {
+gulp.task('themes', function() {
     return gulp
         .src('./lib/template/themes/*/*/*/*')
         .pipe(gulp.dest('./test/dest/js/themes/'))
