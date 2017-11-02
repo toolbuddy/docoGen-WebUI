@@ -4,6 +4,10 @@ import React from 'react';
 /* Import Semantic-UI React components */
 import { Table } from 'semantic-ui-react';
 
+/* Import components */
+import Tables_Header from './Tables_Header.jsx';
+import Tables_Body from './Tables_Body.jsx';
+
 /**
  * @class Tables
  * @extends {React.Component}
@@ -19,32 +23,29 @@ class Tables extends React.Component {
     }
     
     render() {
-        return (
-            <Table celled selectable>
-                <Table.Header>
-                    <Table.Row>
-                        <Table.HeaderCell colSpan='3'>Table: Table Name</Table.HeaderCell>
-                    </Table.Row>
-                </Table.Header>
-                <Table.Body>
-                    <Table.Row>
-                        <Table.Cell collapsing>node_modules</Table.Cell>
-                        <Table.Cell>Initial commit</Table.Cell>
-                        <Table.Cell>10 hours ago</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Cell>test</Table.Cell>
-                        <Table.Cell>Initial commit</Table.Cell>
-                        <Table.Cell>10 hours ago</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Cell>build</Table.Cell>
-                        <Table.Cell>Initial commit</Table.Cell>
-                        <Table.Cell>10 hours ago</Table.Cell>
-                    </Table.Row>
-                </Table.Body>
-            </Table>
-        );
+        let dataArr = this.props.content;
+        let colSpan = [], checkColSpan = false;
+
+        for (let i = 0; i < dataArr.length; ++i) {
+            colSpan.push(dataArr[i]['value'].length + 1);
+            if (i > 0) {
+                if (colSpan[i-1] === colSpan[i]) {
+                    checkColSpan = true;
+                }
+            }
+        }
+
+        if (checkColSpan === true) {
+            return (
+                <Table celled selectable>
+                    <Tables_Header 
+                        caption={this.props.caption}
+                        colSpan={colSpan[0]} />
+                    <Tables_Body 
+                        tbody={dataArr} />
+                </Table>
+            );
+        }
     }
 }
 

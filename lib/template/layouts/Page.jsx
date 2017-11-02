@@ -30,8 +30,11 @@ class Page extends React.Component {
                 {
                     dataArr.map(function(item, i) {
                         return (
-                            <Section
-                                content={item} />
+                            <div>
+                                <Section
+                                    content={item} />
+                                <Divider />
+                            </div>
                         );
                     })
                 }

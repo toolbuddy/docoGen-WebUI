@@ -30,7 +30,6 @@ class Subsection extends React.Component {
                     content={dataArr.data}
                     title={dataArr.name}
                     type={dataArr.type} />
-                <Divider />
             </Segment>
         );
     }

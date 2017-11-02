@@ -2,7 +2,7 @@
 import React from 'react';
 
 /* Import Semantic-UI React components */
-import { Divider, Segment } from 'semantic-ui-react';
+import { Segment } from 'semantic-ui-react';
 
 /* Import components */
 import Article from './Article.jsx';
@@ -28,7 +28,7 @@ class Section extends React.Component {
         
         if (dataArr.type === 'none') {
             return (
-                <Segment style={{ border: 'none', paddingTop: '0' }} vertical>
+                <Segment style={{ border: 'none', padding: '0' }} vertical>
                     <Article 
                         content={dataArr.data}
                         title={dataArr.name}
@@ -39,7 +39,7 @@ class Section extends React.Component {
             if (dataArr.subarticle != undefined) {
                 if (dataArr.figure != undefined) {
                     return (
-                        <Segment style={{ border: 'none', paddingTop: '0' }} vertical>
+                        <Segment style={{ border: 'none', padding: '0' }} vertical>
                             <Article 
                                 content={dataArr.data}
                                 title={dataArr.name}
@@ -60,7 +60,7 @@ class Section extends React.Component {
                     );
                 } else {
                     return (
-                        <Segment style={{ border: 'none', paddingTop: '0' }} vertical>
+                        <Segment style={{ border: 'none', padding: '0' }} vertical>
                             <Article 
                                 content={dataArr.data}
                                 title={dataArr.name}
@@ -80,7 +80,7 @@ class Section extends React.Component {
             } else {
                 if (dataArr.figure != undefined) {
                     return (
-                        <Segment style={{ border: 'none', paddingTop: '0' }} vertical>
+                        <Segment style={{ border: 'none', padding: '0' }} vertical>
                             <Article 
                                 content={dataArr.data}
                                 title={dataArr.name}
@@ -92,7 +92,7 @@ class Section extends React.Component {
                     );
                 } else {
                     return (
-                        <Segment style={{ border: 'none', paddingTop: '0' }} vertical>
+                        <Segment style={{ border: 'none', padding: '0' }} vertical>
                             <Article 
                                 content={dataArr.data}
                                 title={dataArr.name}

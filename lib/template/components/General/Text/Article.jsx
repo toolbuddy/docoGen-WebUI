@@ -9,6 +9,7 @@ import Code from '../Code/Code.jsx';
 import Formula from '../Text/Formula.jsx';
 import Lists from '../List/Lists.jsx';
 import Paragraph from './Paragraph.jsx';
+import Tables from '../Table/Tables.jsx';
 import Title from './Title.jsx';
 
 /**
@@ -86,6 +87,9 @@ class Article extends React.Component {
                     <Title 
                         as='h1' 
                         text={this.props.title} />
+                    <Tables 
+                        caption={"Table Caption"}
+                        content={this.props.content} />
                 </div>
             );
         } else if (this.props.type === 'code') {
@@ -111,6 +115,10 @@ class Article extends React.Component {
                 </div>
             );
         } else if (this.props.type === 'formula') {
+            for (let item of this.props.content) {
+                dataArr.push(item);
+            }
+            
             return (
                 <div>
                     <Title 

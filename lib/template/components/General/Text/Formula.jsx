@@ -4,6 +4,9 @@ import React from 'react';
 /* Import Semantic-UI React components */
 import { Segment } from 'semantic-ui-react';
 
+/* Import components */
+import Paragraph from './Paragraph.jsx';
+
 /**
  * @class Formula
  * @extends {React.Component}
@@ -20,25 +23,46 @@ class Formula extends React.Component {
     
     render() {
         if (this.props.display != undefined) {
-            return ( 
-                <Segment
-                    color='black'>
-                    {this.props.info}
-                </Segment>
+            return (
+                <div>
+                    <Paragraph 
+                        content={this.props.info} />
+                    <Segment
+                        color='black'
+                        style={{
+                            margin: '1em 0 1em'
+                        }}>
+                        {this.props.info}
+                    </Segment>
+                </div>
             );
         } else if (this.props.inline != undefined) {
             return ( 
-                <Segment
-                    color='black'>
-                    {this.props.info}
-                </Segment>
+                <div>
+                    <Paragraph 
+                        content={this.props.info} />
+                    <Segment
+                        color='black'
+                        style={{
+                            margin: '1em 0 1em'
+                        }}>
+                        {this.props.info}
+                    </Segment>
+                </div>
             );
         } else if (this.props.equation != undefined) {
             return ( 
-                <Segment
-                    color='black'>
-                    {this.props.info}
-                </Segment>
+                <div>
+                    <Paragraph 
+                        content={this.props.info} />
+                    <Segment
+                        color='black'
+                        style={{
+                            margin: '1em 0 1em'
+                        }}>
+                        {this.props.info}
+                    </Segment>
+                </div>
             );
         }
     }

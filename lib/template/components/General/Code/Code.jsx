@@ -43,7 +43,7 @@ class Code extends React.Component {
                     attached='bottom' 
                     compact 
                     style={{ 
-                        margin: '0', 
+                        margin: '-1px -1px 0', 
                         padding: '0 1em 0' 
                     }}>
                     <Title 
