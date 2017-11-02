@@ -24,43 +24,45 @@ class Formula extends React.Component {
     render() {
         if (this.props.display != undefined) {
             return (
-                <div>
+                <div
+                    style={{
+                        margin: '0 0 1em'
+                    }}>
                     <Paragraph 
                         content={this.props.info} />
                     <Segment
                         color='black'
                         style={{
-                            margin: '1em 0 1em'
+                            margin: '0.5em 0 0'
                         }}>
-                        {this.props.info}
+                        {this.props.display}
                     </Segment>
                 </div>
             );
         } else if (this.props.inline != undefined) {
             return ( 
-                <div>
+                <div
+                    style={{
+                        margin: '0 0 1em'
+                    }}>
                     <Paragraph 
-                        content={this.props.info} />
-                    <Segment
-                        color='black'
-                        style={{
-                            margin: '1em 0 1em'
-                        }}>
-                        {this.props.info}
-                    </Segment>
+                        content={this.props.info + ' ' + this.props.inline + ' '} />
                 </div>
             );
         } else if (this.props.equation != undefined) {
             return ( 
-                <div>
+                <div
+                    style={{
+                        margin: '0 0 1em'
+                    }}>
                     <Paragraph 
                         content={this.props.info} />
                     <Segment
                         color='black'
                         style={{
-                            margin: '1em 0 1em'
+                            margin: '0.5em 0 0'
                         }}>
-                        {this.props.info}
+                        {this.props.equation}
                     </Segment>
                 </div>
             );

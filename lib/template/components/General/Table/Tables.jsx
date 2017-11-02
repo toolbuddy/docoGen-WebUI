@@ -37,7 +37,12 @@ class Tables extends React.Component {
 
         if (checkColSpan === true) {
             return (
-                <Table celled selectable>
+                <Table 
+                    celled 
+                    selectable
+                    style={{
+                        margin: '1em 0'
+                    }}>
                     <Tables_Header 
                         caption={this.props.caption}
                         colSpan={colSpan[0]} />

@@ -818,7 +818,12 @@ var Tables = function (_React$Component) {
             if (checkColSpan === true) {
                 return _react2.default.createElement(
                     _semanticUiReact.Table,
-                    { celled: true, selectable: true },
+                    {
+                        celled: true,
+                        selectable: true,
+                        style: {
+                            margin: '1em 0'
+                        } },
                     _react2.default.createElement(_Tables_Header2.default, {
                         caption: this.props.caption,
                         colSpan: colSpan[0] }),
@@ -1384,7 +1389,10 @@ var Formula = function (_React$Component) {
             if (this.props.display != undefined) {
                 return _react2.default.createElement(
                     'div',
-                    null,
+                    {
+                        style: {
+                            margin: '0 0 1em'
+                        } },
                     _react2.default.createElement(_Paragraph2.default, {
                         content: this.props.info }),
                     _react2.default.createElement(
@@ -1392,31 +1400,28 @@ var Formula = function (_React$Component) {
                         {
                             color: 'black',
                             style: {
-                                margin: '1em 0 1em'
+                                margin: '0.5em 0 0'
                             } },
-                        this.props.info
+                        this.props.display
                     )
                 );
             } else if (this.props.inline != undefined) {
                 return _react2.default.createElement(
                     'div',
-                    null,
+                    {
+                        style: {
+                            margin: '0 0 1em'
+                        } },
                     _react2.default.createElement(_Paragraph2.default, {
-                        content: this.props.info }),
-                    _react2.default.createElement(
-                        _semanticUiReact.Segment,
-                        {
-                            color: 'black',
-                            style: {
-                                margin: '1em 0 1em'
-                            } },
-                        this.props.info
-                    )
+                        content: this.props.info + ' ' + this.props.inline + ' ' })
                 );
             } else if (this.props.equation != undefined) {
                 return _react2.default.createElement(
                     'div',
-                    null,
+                    {
+                        style: {
+                            margin: '0 0 1em'
+                        } },
                     _react2.default.createElement(_Paragraph2.default, {
                         content: this.props.info }),
                     _react2.default.createElement(
@@ -1424,9 +1429,9 @@ var Formula = function (_React$Component) {
                         {
                             color: 'black',
                             style: {
-                                margin: '1em 0 1em'
+                                margin: '0.5em 0 0'
                             } },
-                        this.props.info
+                        this.props.equation
                     )
                 );
             }
@@ -1623,7 +1628,11 @@ var Section = function (_React$Component) {
                     if (dataArr.figure != undefined) {
                         return _react2.default.createElement(
                             _semanticUiReact.Segment,
-                            { style: { border: 'none', padding: '0' }, vertical: true },
+                            {
+                                style: {
+                                    border: 'none',
+                                    padding: '0' },
+                                vertical: true },
                             _react2.default.createElement(_Article2.default, {
                                 content: dataArr.data,
                                 title: dataArr.name,
@@ -1635,7 +1644,11 @@ var Section = function (_React$Component) {
                     } else {
                         return _react2.default.createElement(
                             _semanticUiReact.Segment,
-                            { style: { border: 'none', padding: '0' }, vertical: true },
+                            {
+                                style: {
+                                    border: 'none',
+                                    padding: '0' },
+                                vertical: true },
                             _react2.default.createElement(_Article2.default, {
                                 content: dataArr.data,
                                 title: dataArr.name,
@@ -3738,7 +3751,7 @@ var Page = function (_React$Component) {
                         null,
                         _react2.default.createElement(_Section2.default, {
                             content: item }),
-                        _react2.default.createElement(_semanticUiReact.Divider, null)
+                        _react2.default.createElement(_semanticUiReact.Divider, { section: true })
                     );
                 })
             );

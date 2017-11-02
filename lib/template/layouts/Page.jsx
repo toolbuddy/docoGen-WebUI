@@ -33,7 +33,7 @@ class Page extends React.Component {
                             <div>
                                 <Section
                                     content={item} />
-                                <Divider />
+                                <Divider section />
                             </div>
                         );
                     })

@@ -80,7 +80,11 @@ class Section extends React.Component {
             } else {
                 if (dataArr.figure != undefined) {
                     return (
-                        <Segment style={{ border: 'none', padding: '0' }} vertical>
+                        <Segment 
+                            style={{ 
+                                border: 'none',
+                                padding: '0' }} 
+                            vertical>
                             <Article 
                                 content={dataArr.data}
                                 title={dataArr.name}
@@ -92,7 +96,11 @@ class Section extends React.Component {
                     );
                 } else {
                     return (
-                        <Segment style={{ border: 'none', padding: '0' }} vertical>
+                        <Segment 
+                            style={{ 
+                                border: 'none',
+                                padding: '0' }} 
+                            vertical>
                             <Article 
                                 content={dataArr.data}
                                 title={dataArr.name}

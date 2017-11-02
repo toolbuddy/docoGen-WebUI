@@ -2,7 +2,7 @@
 import React from 'react';
 
 /* Import Semantic-UI React components */
-import { Divider, Segment } from 'semantic-ui-react';
+import { Segment } from 'semantic-ui-react';
 
 /* Import components */
 import Subarticle from './Subarticle.jsx';
