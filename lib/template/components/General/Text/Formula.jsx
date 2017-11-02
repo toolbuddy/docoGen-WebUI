@@ -1,5 +1,6 @@
 /* Import modules */
 import React from 'react';
+import MathJax from 'react-mathjax';
 
 /* Import Semantic-UI React components */
 import { Segment } from 'semantic-ui-react';
@@ -35,7 +36,9 @@ class Formula extends React.Component {
                         style={{
                             margin: '0.5em 0 0'
                         }}>
-                        {this.props.display}
+                        <MathJax.Context>
+                            <MathJax.Node>{this.props.display}</MathJax.Node>
+                        </MathJax.Context>
                     </Segment>
                 </div>
             );
@@ -46,7 +49,8 @@ class Formula extends React.Component {
                         margin: '0 0 1em'
                     }}>
                     <Paragraph 
-                        content={this.props.info + ' ' + this.props.inline + ' '} />
+                        content={this.props.info}
+                        formula={this.props.inline} />
                 </div>
             );
         } else if (this.props.equation != undefined) {
@@ -62,7 +66,9 @@ class Formula extends React.Component {
                         style={{
                             margin: '0.5em 0 0'
                         }}>
-                        {this.props.equation}
+                        <MathJax.Context>
+                            <MathJax.Node>{this.props.equation}</MathJax.Node>
+                        </MathJax.Context>
                     </Segment>
                 </div>
             );

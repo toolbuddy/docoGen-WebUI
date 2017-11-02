@@ -153,7 +153,7 @@ gulp.task('styles', function() {
 
 /* Watch task */
 gulp.task('watch', function() {
-    gulp.watch('./lib/template/less/**/*.less', ['styles']);
+    return gulp.watch('./lib/template/less/**/*.less', ['styles']);
 });
 
 /* Duplicate themes */
