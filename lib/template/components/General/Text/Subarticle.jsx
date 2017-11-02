@@ -26,7 +26,7 @@ class Subarticle extends React.Component {
     render() {
         let dataArr = [];
 
-        if (this.props.type === 'text') {
+        if (this.props.type === 'text' || this.props.type === 'none') {
             for (var i = 0; i < this.props.content.length; ++i) {
                 dataArr.push(this.props.content[i].info);
             }
@@ -65,7 +65,10 @@ class Subarticle extends React.Component {
              );
         } else if (this.props.type === 'list') {
             return (
-                <div>
+                <div
+                    style={{
+                        padding: '0 0 1.5em'
+                    }}>
                     <Lists 
                         content={this.props.content}
                         listParam={{
@@ -75,6 +78,62 @@ class Subarticle extends React.Component {
                         }} />
                 </div>
             )
+        } else if (this.props.type === 'table') {
+            return (
+                <div>
+                    <Title 
+                        as='h1' 
+                        text={this.props.title} />
+                    <Tables 
+                        caption={"Table Caption"}
+                        content={this.props.content} />
+                </div>
+            );
+        } else if (this.props.type === 'code') {
+            for (let item of this.props.content) {
+                dataArr.push(item);
+            }
+
+            return (
+                <div>
+                    <Title 
+                        as='h1' 
+                        text={this.props.title} />
+                    {
+                        dataArr.map(function(item, i) {
+                            return (
+                                <Code 
+                                    caption={item.caption}
+                                    lang={item.lang}
+                                    raw={item.raw} />
+                            );
+                        })
+                    }
+                </div>
+            );
+        } else if (this.props.type === 'formula') {
+            for (let item of this.props.content) {
+                dataArr.push(item);
+            }
+            
+            return (
+                <div>
+                    <Title 
+                        as='h1' 
+                        text={this.props.title} />
+                    {
+                        dataArr.map(function(item, i) {
+                            return (
+                                <Formula 
+                                    display={item.display}
+                                    equation={item.equation}
+                                    info={item.info}
+                                    inline={item.inline}/>
+                            );
+                        })
+                    }
+                </div>
+            );
         }
     }
 }
