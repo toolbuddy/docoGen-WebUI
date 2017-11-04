@@ -1,5 +1,5 @@
 {
-    "title": "Docogen Example",
+    "title": "Welcome to docoGen!",
     "vers": "1.0.0",
     "options": {
         "type":"article"
@@ -19,10 +19,9 @@
     ],
     "abstract":{
         "content": [
-            "I went down to the river,"
-            , "I set down on the bank."
-            , "I tried to think but couldn't,"
-            , "So I jumped in and sank."
+            "docoGen is a document generation tool within your masterpiece.",
+            "docoGen WebUI is supported from docoGen package which can generate web page to demostrate the document. docoGen WebUI is based on Sementic UI React currently. In future, we will support more web UI library and become more flexible to use.",
+            "docoGen Project is an open source project for more convenient and widely used in document generation. If you are interest in this project or repository, please contect with us and feel free to ask us any question. We are very welcome you to join our group."
         ]
     },
     "article": [
@@ -30,10 +29,10 @@
     "reference":[
         {
             "name": "Kevin Cyu",
-            "content": "From NCKU, personal website: https://github.com/kevinbird61"
+            "content": "From IMS Lab., CS, NCKU, personal website: https://github.com/kevinbird61"
         }, {
             "name": "Yung-Sheng Lu",
-            "content": "From NCTU, personal website: https://github.com/yungshenglu"
+            "content": "From NSS Lab., CS, NCTU, personal website: https://github.com/yungshenglu"
         }
     ]
 }

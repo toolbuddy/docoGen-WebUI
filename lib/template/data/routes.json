@@ -7,55 +7,58 @@
 			"page": {
 				"article": [
 					{
-						"name": "Merging test",
+						"name": "About docoGen",
 						"type": "text",
 						"data": [
 							{
-								"info": "Building your document and website together."
+								"info": "docoGen is a document generation tool within your masterpiece."
 							},
 							{
-								"info": "New feature support. Next-line testing."
+								"info": "docoGen Project is an open source project for more convenient and widely used in document generation. If you are interest in this project or repository, please contect with us and feel free to ask us any question. We are very welcome you to join our group."
+							},
+							{
+								"info": "docoGen WebUI is supported from docoGen package which can generate web page to demostrate the document. docoGen WebUI is based on Sementic UI React currently. In future, we will support more web UI library and become more flexible to use."
 							}
 						],
 						"figure": [
 							{
-								"path": "../img/square-image.png",
+								"path": "../img/ToolBuddy-logo.png",
 								"align": "",
 								"size": "",
-								"caption": "Figure Caption"
+								"caption": "ToolBuddy Logo"
 							}
 						],
 						"subarticle": [
 							{
-								"title": "Why we create Docogen?",
+								"title": "Join Us!",
 								"content": [
 									{
-										"name": "Why we create Docogen?",
+										"name": "Make the world a better place.",
 										"type": "text",
 										"data": [
 											{
-												"info": "Building your document and website together."
-											},
-											{
-												"info": "Generate a beautiful introduction paper with simple command."
-											}
-										],
-										"figure": [
-											{
-												"path": "../img/square-image.png",
-												"align": "",
-												"size": "",
-												"caption": "Figure Caption"
-											},
-											{
-												"path": "../img/square-image.png",
-												"align": "",
-												"size": "",
-												"caption": "Figure Caption"
+												"info": "If any question or want to join us, please feel free to contact with us!"
 											}
 										]
 									}
 								]
+							}
+						]
+					},
+					{
+						"name": "What is docoGen WebUI?",
+						"type": "text",
+						"data": [
+							{
+								"info": "docoGen WebUI is supported from docoGen package which can generate web page to demostrate the document. docoGen WebUI is based on Sementic UI React currently. In future, we will support more web UI library and become more flexible to use."
+							}
+						],
+						"figure": [
+							{
+								"path": "../img/ToolBuddy-logo.png",
+								"align": "",
+								"size": "",
+								"caption": "ToolBuddy Logo"
 							}
 						]
 					}
@@ -64,59 +67,40 @@
 		},
 		{
 			"chapter": 2,
-			"title": "Introduction",
-			"route": "Introduction",
+			"title": "About Us",
+			"route": "About_Us",
 			"page": {
 				"article": [
 					{
-						"name": "List Structure",
-						"type": "none",
-						"data": [
-							{
-								"info": "\tList Structure Example: "
-							}
-						]
-					},
-					{
-						"name": "What is Docogen?",
+						"name": "What is toolbuddy?",
 						"type": "text",
+						"text": "Make the world a better place.",
 						"data": [
 							{
-								"info": "Building your document and website together."
-							},
-							{
-								"info": "New feature support. Next-line testing."
+								"info": "An group of good programmer that solve the problem!"
 							}
 						],
 						"figure": [
 							{
-								"path": "../img/square-image.png",
-								"align": "",
+								"path": "../img/ToolBuddy-logo.png",
+								"align": "center",
 								"size": "",
-								"caption": "Figure Caption"
+								"caption": "ToolBuddy Logo"
 							}
 						],
 						"subarticle": [
 							{
-								"title": "Why we create Docogen?",
+								"title": "How to join ToolBuddy?",
 								"content": [
 									{
-										"name": "Why we create Docogen?",
-										"type": "text",
+										"name": "If any question or want to join us, please feel free to contact with us!",
+										"type": "list",
 										"data": [
 											{
-												"info": "Building your document and website together."
+												"name": "Kevin Cyu: kevinbird61@gmail.com"
 											},
 											{
-												"info": "Generate a beautiful introduction paper with simple command."
-											}
-										],
-										"figure": [
-											{
-												"path": "../img/square-image.png",
-												"align": "",
-												"size": "",
-												"caption": "Figure Caption"
+												"name": "Yung-Sheng Lu: yungshenglu1994@gmail.com"
 											}
 										]
 									}
@@ -129,72 +113,80 @@
 		},
 		{
 			"chapter": 3,
-			"title": "About us",
-			"route": "About_us",
+			"title": "Different Usage of Content",
+			"route": "Different_Usage of Content",
 			"page": {
 				"article": [
 					{
-						"name": "What is toolbuddy?",
+						"name": "Nested Structure",
 						"type": "text",
-						"text": "An group of good programmer that solve the problem!",
 						"data": [
 							{
-								"info": "An group of good programmer that solve the problem!"
+								"info": "docoGen Project is an open source project for more convenient and widely used in document generation. If you are interest in this project or repository, please contect with us and feel free to ask us any question. We are very welcome you to join our group."
+							},
+							{
+								"info": "docoGen WebUI is supported from docoGen package which can generate web page to demostrate the document. docoGen WebUI is based on Sementic UI React currently. In future, we will support more web UI library and become more flexible to use."
 							}
 						],
 						"figure": [
 							{
-								"path": "../img/square-image.png",
-								"align": "center",
+								"path": "../img/ToolBuddy-logo.png",
+								"align": "",
 								"size": "",
-								"caption": "Figure Caption"
+								"caption": "ToolBuddy Logo"
+							},
+							{
+								"path": "../img/ToolBuddy-logo.png",
+								"align": "",
+								"size": "",
+								"caption": "ToolBuddy Logo"
+							},
+							{
+								"path": "../img/ToolBuddy-logo.png",
+								"align": "",
+								"size": "",
+								"caption": "ToolBuddy Logo"
 							}
 						],
 						"subarticle": [
 							{
-								"title": "How to join toolbuddy?",
+								"title": "Sub-article 1",
 								"content": [
 									{
-										"name": "The way:",
+										"name": "Make the world a better place.",
 										"type": "text",
 										"data": [
 											{
-												"info": "Just email to Kevin and pass your github ID and he will find your by himself!"
-											}
-										],
-										"figure": [
+												"info": "docoGen Project is an open source project for more convenient and widely used in document generation. If you are interest in this project or repository, please contect with us and feel free to ask us any question. We are very welcome you to join our group."
+											},
 											{
-												"path": "../img/square-image.png",
-												"align": "center",
-												"size": "",
-												"caption": "Figure Caption"
+												"info": "docoGen WebUI is supported from docoGen package which can generate web page to demostrate the document. docoGen WebUI is based on Sementic UI React currently. In future, we will support more web UI library and become more flexible to use."
+											}
+										]
+									}
+								]
+							},
+							{
+								"title": "Sub-article 2",
+								"content": [
+									{
+										"name": "Make the world a better place.",
+										"type": "text",
+										"data": [
+											{
+												"info": "docoGen Project is an open source project for more convenient and widely used in document generation. If you are interest in this project or repository, please contect with us and feel free to ask us any question. We are very welcome you to join our group."
+											},
+											{
+												"info": "docoGen WebUI is supported from docoGen package which can generate web page to demostrate the document. docoGen WebUI is based on Sementic UI React currently. In future, we will support more web UI library and become more flexible to use."
 											}
 										]
 									}
 								]
 							}
 						]
-					}
-				]
-			}
-		},
-		{
-			"chapter": 4,
-			"title": "Different usage of content",
-			"route": "Different_usage of content",
-			"page": {
-				"article": [
-					{
-						"name": "List Structure",
-						"type": "none",
-						"data": [
-							{
-								"info": "\tList Structure Example: "
-							}
-						]
 					},
 					{
-						"name": "Demo",
+						"name": "List Structure",
 						"type": "list",
 						"data": [
 							{
@@ -230,31 +222,74 @@
 						],
 						"figure": [
 							{
-								"path": "../img/square-image.png",
+								"path": "../img/ToolBuddy-logo.png",
 								"align": "",
 								"size": "",
-								"caption": "Figure Caption"
+								"caption": "ToolBuddy Logo"
 							},
 							{
-								"path": "../img/square-image.png",
+								"path": "../img/ToolBuddy-logo.png",
 								"align": "",
 								"size": "",
-								"caption": "Figure Caption"
+								"caption": "ToolBuddy Logo"
+							},
+							{
+								"path": "../img/ToolBuddy-logo.png",
+								"align": "",
+								"size": "",
+								"caption": "ToolBuddy Logo"
 							}
-						],
-						"subarticle": []
+						]
 					}
 				]
 			}
 		},
 		{
-			"chapter": 5,
-			"title": "Table Demo",
-			"route": "Table_Demo",
+			"chapter": 4,
+			"title": "Table Structure",
+			"route": "Table_Structure",
 			"page": {
 				"article": [
 					{
-						"name": "Table 1",
+						"name": "Table Demo",
+						"type": "table",
+						"data": [
+							{
+								"title": "Name",
+								"value": [
+									"Kevin",
+									"Eric",
+									"Lu",
+									"Cyu",
+									"Lai"
+								]
+							},
+							{
+								"title": "Age",
+								"value": [
+									"23",
+									"22",
+									"24",
+									"52",
+									"50"
+								]
+							},
+							{
+								"title": "Job",
+								"value": [
+									"programmer",
+									"student",
+									"engineer",
+									"professor",
+									"soldier"
+								]
+							}
+						],
+						"figure": [],
+						"subarticle": []
+					},
+					{
+						"name": "Table Demo",
 						"type": "table",
 						"data": [
 							{
@@ -295,7 +330,7 @@
 			}
 		},
 		{
-			"chapter": 6,
+			"chapter": 5,
 			"title": "Code listing Demo",
 			"route": "Code_listing Demo",
 			"page": {
@@ -322,7 +357,7 @@
 			}
 		},
 		{
-			"chapter": 7,
+			"chapter": 6,
 			"title": "Formula Demo",
 			"route": "Formula_Demo",
 			"page": {
