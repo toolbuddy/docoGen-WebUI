@@ -59,7 +59,7 @@ class App extends React.Component {
                 <Sidebar.Pushable 
                     as={Segment} 
                     style={{
-                        margin: '2em 0 0',
+                        margin: '3.5em 0 0',
                         overflowY: 'hiddem'
                     }}>
                     <Sidebar 

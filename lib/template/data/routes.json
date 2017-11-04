@@ -251,7 +251,7 @@
 			"page": {
 				"article": [
 					{
-						"name": "Table Demo",
+						"name": "Table Demo 1",
 						"type": "table",
 						"data": [
 							{
@@ -289,7 +289,7 @@
 						"subarticle": []
 					},
 					{
-						"name": "Table Demo",
+						"name": "Table Demo 2",
 						"type": "table",
 						"data": [
 							{

@@ -3710,7 +3710,7 @@ module.exports={
 			"page": {
 				"article": [
 					{
-						"name": "Table Demo",
+						"name": "Table Demo 1",
 						"type": "table",
 						"data": [
 							{
@@ -3748,7 +3748,7 @@ module.exports={
 						"subarticle": []
 					},
 					{
-						"name": "Table Demo",
+						"name": "Table Demo 2",
 						"type": "table",
 						"data": [
 							{
@@ -3959,7 +3959,7 @@ var App = function (_React$Component) {
                     {
                         as: _semanticUiReact.Segment,
                         style: {
-                            margin: '2em 0 0',
+                            margin: '3.5em 0 0',
                             overflowY: 'hiddem'
                         } },
                     _react2.default.createElement(
