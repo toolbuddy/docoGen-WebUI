@@ -14,10 +14,46 @@
 
 ## Prerequisite
 
-* Dependencies of `gulp`.
-* Using the file extension which named `.docogen`, and just store JSON format in it.
-    * These files treated as configuration dependency to your generated result.
-    * More information (Still working on it, see `./test/script/` to see current support)
+* Download *Node.js* and install on your working environment.
+* Dependencies of `gulp` as *global*.
+    ```bash
+    npm install gulp -g
+    ```
+
+## Usage
+
+### Installation
+
+* Clone from *GitHub*.
+    ```bash
+    $ git clone https://github.com/toolbuddy/docoGen-WebUI
+    ```
+* Install from *npm*.
+    ```bash
+    $ npm install docogen-webui --save
+    ```
+### Execution
+
+* Import the module in your code.
+    ```javascript
+    const docogen_web = require('docogen-webui');
+    ```
+* Function `generate_html_ex`
+    * `src_path`: the source path to your project root, and it will get all docoGen files (`.docogen`).
+    * `dst_path`: the destination directory to store those generated web page.
+    ```javascript
+    // Convert docogen to web page (HTML format), with absolute path
+    docogen_web.generate_html_ex(src_path, dst_path, function(err, msg) {
+        console.log(msg);
+    });
+    ```
+    > * Using the file extension which named `.docogen`, and just store JSON format in it.
+    >   * These files treated as configuration dependency to your generated result.
+    >   * More information (Still working on it, see `./test/script/` to see current support)
+* Execution
+    ```bash
+    $ node yourcode.js
+    ```
 * Within *docoGen-WebUI* running, the terminal will output some message about *Gulp* tasks.
     ```bash
     Have 8 files.
@@ -89,34 +125,6 @@
     Finished 'build' after 3.8 μs
 
     Gulp - Build completed
-    ```
-
-## Usage
-
-### Installation
-
-* Clone from GitHub.
-    ```bash
-    $ git clone https://github.com/toolbuddy/docoGen-WebUI
-    ```
-* Install from npm.
-    ```bash
-    $ npm install docogen-webui --save
-    ```
-### Execution
-
-* Import the module in your code.
-    ```javascript
-    const docogen_web = require('docogen-webui');
-    ```
-* Function
-    * `src_path`: the source path to your project root, and it will get all docoGen files (`.docogen`).
-    * `dst_path`: the destination directory to store those generated web page.
-    ```javascript
-    // Convert docogen to web page (HTML format), with absolute path
-    docogen_web.generate_html_ex(src_path, dst_path, function(err, msg) {
-        console.log(msg);
-    });
     ```
 
 ## Wiki
