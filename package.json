@@ -1,10 +1,10 @@
 {
-  "name": "docogen-html-ui",
+  "name": "docogen-webui",
   "description": "docoGen html module",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/toolbuddy/docogen-html-ui.git"
+    "url": "https://github.com/toolbuddy/docogen-WebUI.git"
   },
   "config": {
     "port": 3000
@@ -14,9 +14,9 @@
   ],
   "author": "Yung-Sheng Lu",
   "bugs": {
-    "url": "https://github.com/toolbuddy/docogen_ui/issues"
+    "url": "https://github.com/toolbuddy/docogen-WebUI/issues"
   },
-  "homepage": "https://github.com/toolbuddy/docogen_ui#readme",
+  "homepage": "https://github.com/toolbuddy/docogen-WebUI#readme",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
