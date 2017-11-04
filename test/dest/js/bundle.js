@@ -3973,7 +3973,8 @@ var App = function (_React$Component) {
             this.setState({
                 visible: !this.state.visible,
                 style: {
-                    width: toggleWidth
+                    width: toggleWidth,
+                    paddingLeft: '2.5em'
                 }
             });
         }
