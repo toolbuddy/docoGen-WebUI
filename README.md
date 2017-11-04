@@ -14,7 +14,82 @@
 
 ## Prerequisite
 
-(Update soon.)
+* Dependencies of `gulp`.
+* Using the file extension which named `.docogen`, and just store JSON format in it.
+    * These files treated as configuration dependency to your generated result.
+    * More information (Still working on it, see `./test/script/` to see current support)
+* Within *docoGen-WebUI* running, the terminal will output some message about *Gulp* tasks.
+    ```bash
+    Have 8 files.
+    [17:46:32]
+    Working directory changed to ~/Project/docoGen-html-ui
+
+    [17:46:32]
+    Working directory changed to ~/Project/docoGen-html-ui
+
+    [17:46:34]
+    Using gulpfile ~/Project/docoGen-html-ui/gulpfile.js
+
+    [17:46:34]
+    Using gulpfile ~/Project/docoGen-html-ui/gulpfile.js
+
+    [17:46:34]
+    Starting 'themes'...
+
+    [17:46:34]
+    Starting 'styles'...
+
+    [17:46:34]
+    Starting 'vendor'...
+
+    [17:46:34]
+    Starting 'setup'...
+
+    [17:46:34]
+    Starting 'browserify-vendor'...
+
+    [17:46:34]
+    Starting 'i18n'...
+
+    [17:46:34]
+    Finished 'setup' after 20 ms
+
+    [17:46:34]
+    Finished 'themes' after 66 ms
+
+    [17:46:34]
+    Starting 'initial'...
+
+    [17:46:34]
+    Finished 'initial' after 35 μs
+
+    Gulp - Initialize completed
+
+    [17:46:35]
+    Finished 'i18n' after 1.46 s
+
+    [17:46:35]
+    Finished 'styles' after 1.53 s
+
+    [17:46:35] Finished 'vendor' after 1.64 s
+
+    [17:46:37]
+    Finished 'browserify-vendor' after 3.24 s
+
+    [17:46:37]
+    Starting 'browserify'...
+
+    [17:46:45]
+    Finished 'browserify' after 8.29 s
+
+    [17:46:45]
+    Starting 'build'...
+
+    [17:46:45]
+    Finished 'build' after 3.8 μs
+
+    Gulp - Build completed
+    ```
 
 ## Usage
 
