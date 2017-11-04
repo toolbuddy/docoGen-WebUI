@@ -27,14 +27,14 @@ class Formula extends React.Component {
             return (
                 <div
                     style={{
-                        margin: '0 0 1em'
+                        margin: '0 0 2em'
                     }}>
                     <Paragraph 
                         content={this.props.info} />
                     <Segment
                         color='black'
                         style={{
-                            margin: '0.5em 0 0'
+                            margin: '0.5em 0 0.5em'
                         }}>
                         <MathJax.Context>
                             <MathJax.Node>{this.props.display}</MathJax.Node>
@@ -46,7 +46,7 @@ class Formula extends React.Component {
             return ( 
                 <div
                     style={{
-                        margin: '0 0 1em'
+                        margin: '0 0 2em'
                     }}>
                     <Paragraph 
                         content={this.props.info}
@@ -57,14 +57,14 @@ class Formula extends React.Component {
             return ( 
                 <div
                     style={{
-                        margin: '0 0 1em'
+                        margin: '0 0 2em'
                     }}>
                     <Paragraph 
                         content={this.props.info} />
                     <Segment
                         color='black'
                         style={{
-                            margin: '0.5em 0 0'
+                            margin: '0.5em 0 0.5em'
                         }}>
                         <MathJax.Context>
                             <MathJax.Node>{this.props.equation}</MathJax.Node>

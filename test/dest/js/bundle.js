@@ -1484,7 +1484,7 @@ var Formula = function (_React$Component) {
                     'div',
                     {
                         style: {
-                            margin: '0 0 1em'
+                            margin: '0 0 2em'
                         } },
                     _react2.default.createElement(_Paragraph2.default, {
                         content: this.props.info }),
@@ -1493,7 +1493,7 @@ var Formula = function (_React$Component) {
                         {
                             color: 'black',
                             style: {
-                                margin: '0.5em 0 0'
+                                margin: '0.5em 0 0.5em'
                             } },
                         _react2.default.createElement(
                             _reactMathjax2.default.Context,
@@ -1511,7 +1511,7 @@ var Formula = function (_React$Component) {
                     'div',
                     {
                         style: {
-                            margin: '0 0 1em'
+                            margin: '0 0 2em'
                         } },
                     _react2.default.createElement(_Paragraph2.default, {
                         content: this.props.info,
@@ -1522,7 +1522,7 @@ var Formula = function (_React$Component) {
                     'div',
                     {
                         style: {
-                            margin: '0 0 1em'
+                            margin: '0 0 2em'
                         } },
                     _react2.default.createElement(_Paragraph2.default, {
                         content: this.props.info }),
@@ -1531,7 +1531,7 @@ var Formula = function (_React$Component) {
                         {
                             color: 'black',
                             style: {
-                                margin: '0.5em 0 0'
+                                margin: '0.5em 0 0.5em'
                             } },
                         _react2.default.createElement(
                             _reactMathjax2.default.Context,
@@ -3744,8 +3744,14 @@ module.exports={
 								]
 							}
 						],
-						"figure": [],
-						"subarticle": []
+						"figure": [
+							{
+								"path": "../img/ToolBuddy-logo.png",
+								"align": "",
+								"size": "",
+								"caption": "ToolBuddy Logo"
+							}
+						]
 					},
 					{
 						"name": "Table Demo 2",
@@ -3782,64 +3788,97 @@ module.exports={
 								]
 							}
 						],
-						"figure": [],
-						"subarticle": []
+						"figure": [
+							{
+								"path": "../img/ToolBuddy-logo.png",
+								"align": "",
+								"size": "",
+								"caption": "ToolBuddy Logo"
+							}
+						]
 					}
 				]
 			}
 		},
 		{
 			"chapter": 5,
-			"title": "Code listing Demo",
-			"route": "Code_listing Demo",
+			"title": "Code Listing Structure",
+			"route": "Code_Listing Structure",
 			"page": {
 				"article": [
 					{
-						"name": "Code listing 1",
+						"name": "Code Listing Demo 1",
 						"type": "code",
 						"data": [
 							{
 								"lang": "C",
 								"caption": "example.c",
-								"raw": "#include <stdio.h>\n\nint main(void) {\n    return 0;\n}\n"
+								"raw": "#include <stdio.h>\n\nint main(void) {\n    printf(\"Hello World\\n\");\n    return 0;\n}\n"
 							},
 							{
 								"lang": "CPP",
 								"caption": "example.cpp",
-								"raw": "#include <iostream>\n\nusing namespace std;\n\nint main(void) {\n    return 0;\n}\n"
+								"raw": "#include <iostream>\n\nusing namespace std;\n\nint main(void) {\n    cout << \"Hello World\" << endl;\n    return 0;\n}\n"
 							}
 						],
-						"figure": [],
-						"subarticle": []
+						"figure": [
+							{
+								"path": "../img/ToolBuddy-logo.png",
+								"align": "",
+								"size": "",
+								"caption": "ToolBuddy Logo"
+							}
+						]
+					},
+					{
+						"name": "Code Listing Demo 2",
+						"type": "code",
+						"data": [
+							{
+								"lang": "Python",
+								"caption": "example.py",
+								"raw": "print(\"Hello World\\n\")\n"
+							}
+						],
+						"figure": [
+							{
+								"path": "../img/ToolBuddy-logo.png",
+								"align": "",
+								"size": "",
+								"caption": "ToolBuddy Logo"
+							}
+						]
 					}
 				]
 			}
 		},
 		{
 			"chapter": 6,
-			"title": "Formula Demo",
-			"route": "Formula_Demo",
+			"title": "Formula Structure",
+			"route": "Formula_Structure",
 			"page": {
 				"article": [
 					{
-						"name": "Formula 1",
+						"name": "Formula Demo",
 						"type": "formula",
 						"data": [
 							{
-								"info": "Now we will introduce the basic equation usage (inline mode): ",
+								"info": "\nInline mode  ",
 								"inline": "x^2 + y^2 = z^2"
 							},
 							{
-								"info": "\nThen we can see the display mode: \n",
-								"display": "x^n + y^n = z^n"
-							},
-							{
-								"info": "\nAnd about equation tag:\n",
-								"equation": "E=mc^2"
+								"info": "\nDisplay mode ",
+								"display": "E=mc^2"
 							}
 						],
-						"figure": [],
-						"subarticle": []
+						"figure": [
+							{
+								"path": "../img/ToolBuddy-logo.png",
+								"align": "",
+								"size": "",
+								"caption": "ToolBuddy Logo"
+							}
+						]
 					}
 				]
 			}
@@ -3918,7 +3957,8 @@ var App = function (_React$Component) {
         _this.state = {
             visible: true,
             style: {
-                width: '70vw'
+                width: '70vw',
+                paddingLeft: '2.5em'
             }
         };
 

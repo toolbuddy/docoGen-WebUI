@@ -1,27 +1,50 @@
 {
     "article": [
         {
-            "title": "Code listing Demo",
+            "title": "Code Listing Structure",
             "priority": 5,
             "content": [
                 {
-                    "name": "Code listing 1",
+                    "name": "Code Listing Demo 1",
                     "type": "code",
                     "data": [
                         {  
                             "lang": "C",
                             "caption": "example.c",
-                            "raw": "#include <stdio.h>\n\nint main(void) {\n    return 0;\n}\n"
+                            "raw": "#include <stdio.h>\n\nint main(void) {\n    printf(\"Hello World\\n\");\n    return 0;\n}\n"
                         },
                         {  
                             "lang": "CPP",
                             "caption": "example.cpp",
-                            "raw": "#include <iostream>\n\nusing namespace std;\n\nint main(void) {\n    return 0;\n}\n"
+                            "raw": "#include <iostream>\n\nusing namespace std;\n\nint main(void) {\n    cout << \"Hello World\" << endl;\n    return 0;\n}\n"
                         }
                     ],
                     "figure": [
+                        {
+                            "path": "../img/ToolBuddy-logo.png",
+                            "align": "",
+                            "size": "",
+                            "caption": "ToolBuddy Logo"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Code Listing Demo 2",
+                    "type": "code",
+                    "data": [
+                        {  
+                            "lang": "Python",
+                            "caption": "example.py",
+                            "raw": "print(\"Hello World\\n\")\n"
+                        }
                     ],
-                    "subarticle": [
+                    "figure": [
+                        {
+                            "path": "../img/ToolBuddy-logo.png",
+                            "align": "",
+                            "size": "",
+                            "caption": "ToolBuddy Logo"
+                        }
                     ]
                 }
             ]

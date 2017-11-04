@@ -26,7 +26,8 @@ class App extends React.Component {
         this.state = {
             visible: true,
             style: { 
-                width: '70vw' 
+                width: '70vw',
+                paddingLeft: '2.5em'
             }
         };
 

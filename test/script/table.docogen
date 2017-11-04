@@ -22,8 +22,12 @@
                         }
                     ],
                     "figure": [
-                    ],
-                    "subarticle": [
+                        {
+                            "path": "../img/ToolBuddy-logo.png",
+                            "align": "",
+                            "size": "",
+                            "caption": "ToolBuddy Logo"
+                        }
                     ]
                 },
                 {
@@ -44,8 +48,12 @@
                         }
                     ],
                     "figure": [
-                    ],
-                    "subarticle": [
+                        {
+                            "path": "../img/ToolBuddy-logo.png",
+                            "align": "",
+                            "size": "",
+                            "caption": "ToolBuddy Logo"
+                        }
                     ]
                 }
             ]
