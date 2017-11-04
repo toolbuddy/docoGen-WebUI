@@ -44,6 +44,11 @@
                                             "align": "",
                                             "size": "",
                                             "caption": "Figure Caption"
+                                        }, {
+                                            "path": "../img/square-image.png",
+                                            "align": "",
+                                            "size": "",
+                                            "caption": "Figure Caption"
                                         }
                                     ]
                                 }

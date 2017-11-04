@@ -6,6 +6,7 @@ import { Route } from 'react-router';
 import App from './layouts/App.jsx';
 import Intro from './layouts/Intro.jsx';
 import Page from './layouts/Page.jsx';
+//import Title from './components/General/Text/Title.jsx';
 
 /* Import data */
 import routes from './data/routes.json';
@@ -26,9 +27,9 @@ export default (
                         path={'/' + item.route}
                         component={function(props) {
                             return (
-                                <Page 
-                                    chapter={item.chapter} 
-                                    page={item.page.article} />
+                                <Page
+                                    page={item.page.article}
+                                    title={item.chapter + '. ' + item.title} />
                             );
                         }} />
                 );

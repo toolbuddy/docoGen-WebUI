@@ -30,7 +30,7 @@ class Navbar extends React.Component {
                     </Menu.Item>
                 </Menu.Menu>
                 <Menu.Menu position='right'>
-                    <Menu.Header>
+                    <Menu.Header as='h3'>
                         <Menu.Item>
                             <Icon name='book' />docoGen UI
                         </Menu.Item>

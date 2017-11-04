@@ -4,9 +4,6 @@ import React from 'react';
 /* Import Semantic-UI React components */
 import { Card, List, Image, Item } from 'semantic-ui-react';
 
-/* Import components */
-
-
 /**
  * @class IntroPage_Author
  * @extends {React.Component}

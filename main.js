@@ -29,7 +29,7 @@ docoGen_UI.generate_html = function(src_path, dst_path, callbacks) {
         engine.generate_routes(json_obj.article);
 
         // Generate components
-        engine.generate_header(json_obj.title, json_obj.version);
+        engine.generate_header(json_obj.title, json_obj.vers);
         engine.generate_author(json_obj.author);
         engine.generate_abstract(json_obj.abstract.content);
         engine.generate_reference(json_obj.reference);
@@ -47,7 +47,7 @@ docoGen_UI.generate_html_ex = function(src_path, dst_path, callback) {
         // Generate routes
         engine.generate_routes(json_obj.article);
         // Generate components
-        engine.generate_header(json_obj.title, json_obj.version);
+        engine.generate_header(json_obj.title, json_obj.vers);
         engine.generate_author(json_obj.author);
         engine.generate_abstract(json_obj.abstract.content);
         engine.generate_reference(json_obj.reference);
@@ -100,6 +100,10 @@ docoGen_UI.merge_docoGen = function(src_arr, options) {
 
         if (tmp.title != undefined && json_obj.title == undefined) {
             json_obj.title = tmp.title;
+        }
+
+        if (tmp.vers != undefined && json_obj.vers == undefined) {
+            json_obj.vers = tmp.vers;
         }
 
         if (tmp.options != undefined && json_obj.options == undefined) {

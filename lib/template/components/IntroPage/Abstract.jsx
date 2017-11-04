@@ -30,7 +30,11 @@ class Abstract extends React.Component {
         let dataArr = abstract.data[0].content;
         
         return (
-            <Segment style={{ border: 'none', paddingTop: '0' }} vertical>
+            <Segment 
+                style={{ 
+                    border: 'none', 
+                    paddingTop: '0' }} 
+                vertical>
                 <Title as='h2' text='Abstract' />
                 <Article 
                     content={dataArr}

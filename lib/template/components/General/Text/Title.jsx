@@ -37,8 +37,15 @@ class Title extends React.Component {
     render() {
         if (this.props.icon != undefined) {
             return ( 
-                <Header as={this.props.as} style={{ margin: '0', padding: '0.5em 0' }}>
-                    <Icon name={this.props.icon} icon_size={icon_size[this.props.as]} />
+                <Header 
+                    as={this.props.as} 
+                    style={{ 
+                        margin: '0', 
+                        padding: '0.5em 0' 
+                    }}>
+                    <Icon 
+                        name={this.props.icon} 
+                        icon_size={icon_size[this.props.as]} />
                     <Header.Content>
                         { this.props.text }
                     </Header.Content>
@@ -46,7 +53,12 @@ class Title extends React.Component {
             );
         } else {
             return ( 
-                <Header as={this.props.as} style={{ margin: '0', padding: '0.5em 0' }}>
+                <Header 
+                    as={this.props.as} 
+                    style={{ 
+                        margin: '0', 
+                        padding: '0.5em 0' 
+                    }}>
                     { this.props.text }
                 </Header>
             );

@@ -46,6 +46,12 @@
 												"align": "",
 												"size": "",
 												"caption": "Figure Caption"
+											},
+											{
+												"path": "../img/square-image.png",
+												"align": "",
+												"size": "",
+												"caption": "Figure Caption"
 											}
 										]
 									}
@@ -128,7 +134,7 @@
 			"page": {
 				"article": [
 					{
-						"name": "What is toolbuddy\\cite{ToolBuddy}?",
+						"name": "What is toolbuddy?",
 						"type": "text",
 						"text": "An group of good programmer that solve the problem!",
 						"data": [
@@ -228,22 +234,15 @@
 								"align": "",
 								"size": "",
 								"caption": "Figure Caption"
+							},
+							{
+								"path": "../img/square-image.png",
+								"align": "",
+								"size": "",
+								"caption": "Figure Caption"
 							}
 						],
 						"subarticle": []
-					},
-					{
-						"name": "List",
-						"type": "text",
-						"text": "List Structure",
-						"data": [
-							{
-								"info": "Listing structure append"
-							},
-							{
-								"info": "New feature support."
-							}
-						]
 					}
 				]
 			}
@@ -314,11 +313,6 @@
 								"lang": "CPP",
 								"caption": "example.cpp",
 								"raw": "#include <iostream>\n\nusing namespace std;\n\nint main(void) {\n    return 0;\n}\n"
-							},
-							{
-								"lang": "Python",
-								"caption": "example.py",
-								"src": "/Users/yungshenglu/Project/docoGen-html-ui/test/example.py"
 							}
 						],
 						"figure": [],

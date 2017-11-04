@@ -5,7 +5,7 @@
             "priority": 2,
             "content": [
                 {
-                    "name": "What is toolbuddy\\cite{ToolBuddy}?",
+                    "name": "What is toolbuddy?",
                     "type": "text",
                     "text": "An group of good programmer that solve the problem!",
                     "data": [

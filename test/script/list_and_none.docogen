@@ -44,22 +44,14 @@
                             "align": "",
                             "size": "",
                             "caption": "Figure Caption"
+                        }, {
+                            "path": "../img/square-image.png",
+                            "align": "",
+                            "size": "",
+                            "caption": "Figure Caption"
                         }
                     ],
                     "subarticle": [
-                    ]
-                }
-                ,{
-                    "name": "List",
-                    "type": "text",
-                    "text": "List Structure",
-                    "data": [
-                        {
-                            "info": "Listing structure append"
-                        },
-                        {
-                            "info": "New feature support."
-                        }
                     ]
                 }
             ]

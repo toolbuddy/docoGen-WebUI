@@ -1,8 +1,7 @@
 /* Import modules */
 import React from 'react';
-import Highlight from 'react-highlight';
-
-const fs = require('fs');
+import Highlight from 'react-syntax-highlighter';
+import { vs2015 } from 'react-syntax-highlighter/dist/styles';
 
 /* Import Semantic-UI React components */
 import { Divider, Form, Icon, Message } from 'semantic-ui-react';
@@ -18,17 +17,12 @@ class Code extends React.Component {
     constructor(props) {
         super(props);
         this.onChange = this.onChange.bind(this);
-        this.handleFiles = this.handleFiles.bind(this);
     }
 
     onChange(state) {
         this.setState(state);
     }
 
-    handleFiles(files) {
-        console.log(files);
-    }
-    
     render() {
         let dataArr = this.props.image;
 
@@ -53,11 +47,14 @@ class Code extends React.Component {
                             width: 'inherit'
                         }}>
                         <Highlight 
-                            className={this.props.lang}
-                            style={{
-                                margin: '0 !important'
-                            }}>
-                            { this.props.raw }
+                            language={this.props.lang}
+                            lineNumberContainerStyle={{
+                                float: 'left',
+                                paddingRight: '15px'
+                            }}
+                            showLineNumbers={true}
+                            style={vs2015}>
+                            {this.props.raw}
                         </Highlight>
                     </Form>
                     <Message 
@@ -76,8 +73,6 @@ class Code extends React.Component {
                 </div>
             );
         } else if (this.props.src != undefined) {
-            var src_data = fs.readFileSync('/Users/yungshenglu/Project/docoGen-html-ui/test/example.py', 'utf-8');
-            
             return (
                 <div>
                     <Message 
@@ -98,13 +93,14 @@ class Code extends React.Component {
                             width: 'inherit'
                         }}>
                         <Highlight 
-                            className={this.props.lang}
-                            style={{
-                                margin: '0 !important'
-                            }}>
-                            {
-                                src_data
-                            }
+                            language={this.props.lang}
+                            lineNumberContainerStyle={{
+                                float: 'left',
+                                paddingRight: '15px'
+                            }}
+                            showLineNumbers={true}
+                            style={vs2015}>
+                            {this.props.src}
                         </Highlight>
                     </Form>
                     <Message 

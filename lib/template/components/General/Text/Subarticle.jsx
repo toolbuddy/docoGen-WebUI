@@ -9,6 +9,8 @@ import Lists from '../List/Lists.jsx';
 import Paragraph from './Paragraph.jsx';
 import Title from './Title.jsx';
 
+const titleAs = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+
 /**
  * @class Subarticle
  * @extends {React.Component}
@@ -34,7 +36,7 @@ class Subarticle extends React.Component {
             return ( 
                  <div>
                     <Title 
-                        as='h2' 
+                        as={titleAs[this.props.titleAs]} 
                         text={this.props.title} />
                     {
                          dataArr.map(function(item, i) {
@@ -53,6 +55,9 @@ class Subarticle extends React.Component {
 
             return (
                  <div>
+                    <Title 
+                        as={titleAs[this.props.titleAs]} 
+                        text={this.props.title} />
                     {
                         dataArr.map(function(item, i) {
                             return (
@@ -69,6 +74,9 @@ class Subarticle extends React.Component {
                     style={{
                         padding: '0 0 1.5em'
                     }}>
+                    <Title 
+                        as={titleAs[this.props.titleAs]}  
+                        text={this.props.title} />
                     <Lists 
                         content={this.props.content}
                         listParam={{
@@ -82,7 +90,7 @@ class Subarticle extends React.Component {
             return (
                 <div>
                     <Title 
-                        as='h1' 
+                        as={titleAs[this.props.titleAs]} 
                         text={this.props.title} />
                     <Tables 
                         caption={"Table Caption"}
@@ -97,7 +105,7 @@ class Subarticle extends React.Component {
             return (
                 <div>
                     <Title 
-                        as='h1' 
+                        as={titleAs[this.props.titleAs]} 
                         text={this.props.title} />
                     {
                         dataArr.map(function(item, i) {
@@ -119,7 +127,7 @@ class Subarticle extends React.Component {
             return (
                 <div>
                     <Title 
-                        as='h1' 
+                        as={titleAs[this.props.titleAs]}  
                         text={this.props.title} />
                     {
                         dataArr.map(function(item, i) {

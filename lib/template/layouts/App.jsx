@@ -54,9 +54,28 @@ class App extends React.Component {
 
         return (
             <div>
-                <Navbar push={this.togglePush} />
-                <Sidebar.Pushable as={Segment} style={{ height: '100vh', margin: '2em 0 0' }}>
-                    <Sidebar animation='push' as={Menu} style={{ border: 'none', borderRadius: '0', padding: '1.5em 0 0 !important' }} visible={this.state.visible} vertical width='wide'>
+                <Navbar 
+                    push={this.togglePush} />
+                <Sidebar.Pushable 
+                    as={Segment} 
+                    style={{
+                        margin: '2em 0 0',
+                        overflowY: 'hiddem'
+                    }}>
+                    <Sidebar 
+                        animation='push' 
+                        as={Menu} 
+                        style={{ 
+                            border: 'none', 
+                            borderRadius: '0',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            height: '100vh',
+                            padding: '1.5em 0 0 !important' 
+                        }} 
+                        visible={this.state.visible} 
+                        vertical 
+                        width='wide'>
                         {
                             dataArr.map(function(item, i) {
                                 return <Sidebar_Header
@@ -64,7 +83,9 @@ class App extends React.Component {
                                             vers={item.vers} />
                             })
                         }
-                        <Sidebar_Item chapter='Introduction' to='/' />
+                        <Sidebar_Item 
+                            chapter='Introduction' 
+                            to='/' />
                         {
                             routesArr.map(function(item, i) {
                                 return <Sidebar_Item
@@ -73,8 +94,17 @@ class App extends React.Component {
                             })
                         }
                     </Sidebar>
-                    <Sidebar.Pusher style={{ padding: '2em 3em 0 !important' }}>
-                        <Segment basic style={this.state.style}>
+                    <Sidebar.Pusher 
+                        style={{ 
+                            display: 'flex',
+                            flexDirection: 'column',
+                            height: '100vh',
+                            padding: '2em 3em 0 !important',
+                            overflowY: 'auto'
+                        }}>
+                        <Segment 
+                            basic 
+                            style={this.state.style}>
                             { this.props.children }
                         </Segment>
                     </Sidebar.Pusher>

@@ -1,7 +1,8 @@
 {
 	"data": [
 		{
-			"title": "Docogen Example"
+			"title": "Docogen Example",
+			"vers": "1.0.0"
 		}
 	]
 }
