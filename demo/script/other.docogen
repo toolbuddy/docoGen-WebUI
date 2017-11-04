@@ -1,0 +1,68 @@
+{
+    "article": [
+        {
+            "title": "Getting Start",
+            "priority": 0,
+            "content": [
+                {
+                    "name": "Merging test",
+                    "type": "text",
+                    "data": [
+                        {
+                            "info": "Building your document and website together."
+                        },
+                        {
+                            "info": "New feature support. Next-line testing."
+                        }
+                    ],
+                    "figure": [
+                        {
+                            "path": "../img/square-image.png",
+                            "align": "",
+                            "size": "",
+                            "caption": "Figure Caption"
+                        }
+                    ],
+                    "subarticle": [
+                        {
+                            "title": "Why we create Docogen?",
+                            "content": [
+                                {
+                                    "name": "Why we create Docogen?",
+                                    "type": "text",
+                                    "data": [
+                                        {
+                                            "info": "Building your document and website together."
+                                        },
+                                        {
+                                            "info": "Generate a beautiful introduction paper with simple command."
+                                        }
+                                    ],
+                                    "figure": [
+                                        {
+                                            "path": "../img/square-image.png",
+                                            "align": "",
+                                            "size": "",
+                                            "caption": "Figure Caption"
+                                        }, {
+                                            "path": "../img/square-image.png",
+                                            "align": "",
+                                            "size": "",
+                                            "caption": "Figure Caption"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "reference":[
+        {
+            "name": "ToolBuddy",
+            "content": "A good, non-profit organization."
+        }
+    ]
+}

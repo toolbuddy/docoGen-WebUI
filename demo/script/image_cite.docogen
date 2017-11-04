@@ -1,0 +1,52 @@
+{
+    "article": [
+        {
+            "title": "About us",
+            "priority": 2,
+            "content": [
+                {
+                    "name": "What is toolbuddy?",
+                    "type": "text",
+                    "text": "An group of good programmer that solve the problem!",
+                    "data": [
+                        {
+                            "info": "An group of good programmer that solve the problem!"
+                        }
+                    ],
+                    "figure": [
+                        {
+                            "path": "../img/square-image.png",
+                            "align": "center",
+                            "size": "",
+                            "caption": "Figure Caption"
+                        }
+                    ],
+                    "subarticle": [
+                        {
+                            "title": "How to join toolbuddy?",
+                            "content": [
+                                {
+                                    "name": "The way:",
+                                    "type": "text",
+                                    "data": [
+                                        {
+                                            "info": "Just email to Kevin and pass your github ID and he will find your by himself!"
+                                        }
+                                    ],
+                                    "figure": [
+                                        {
+                                            "path": "../img/square-image.png",
+                                            "align": "center",
+                                            "size": "",
+                                            "caption": "Figure Caption"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

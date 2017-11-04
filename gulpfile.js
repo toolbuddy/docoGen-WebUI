@@ -2,6 +2,7 @@
 const gulp = require('gulp');
 const autoPrefixer = require('gulp-autoprefixer');
 const compileJSX = require('gulp-compile-jsx');
+const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 const cssMin = require('gulp-cssmin');
 const gulpIf = require('gulp-if');
@@ -160,8 +161,8 @@ gulp.task('watch', function() {
 gulp.task('themes', function() {
     return gulp
         .src('./lib/template/themes/*/*/*/*')
-        .pipe(gulp.dest('./test/dest/js/themes/'))
-        .pipe(gulp.dest('./test/dest/css/themes/'));
+        .pipe(gulp.dest(dest + 'js/themes/'))
+        .pipe(gulp.dest(dest + 'css/themes/'));
 });
 
 /* Initialize HTML */
@@ -181,13 +182,23 @@ gulp.task('i18n', function() {
         .pipe(gulp.dest(dest));
 });
 
+/* Clean the unuse folder in destination folder */
+gulp.task('clean', function() {
+    return gulp
+        .src(dest + 'en', {
+            read: false
+        })
+        .pipe(clean());
+})
+
 /* Default task */
 gulp.task('default', [
     'styles',
     'vendor',
     'browserify-watch',
     'watch',
-    'i18n'
+    'i18n',
+    'clean'
 ]);
 
 /* Build task */
@@ -195,7 +206,8 @@ gulp.task('build', [
     'styles',
     'vendor',
     'browserify',
-    'i18n'
+    'i18n',
+    'clean'
 ]);
 
 /* Initialize task */
