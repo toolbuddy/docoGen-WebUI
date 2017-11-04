@@ -5,54 +5,58 @@
             "priority": 0,
             "content": [
                 {
-                    "name": "Merging test",
+                    "name": "About docoGen",
                     "type": "text",
                     "data": [
                         {
-                            "info": "Building your document and website together."
+                            "info": "docoGen is a document generation tool within your masterpiece."
                         },
                         {
-                            "info": "New feature support. Next-line testing."
+                            "info": "docoGen Project is an open source project for more convenient and widely used in document generation. If you are interest in this project or repository, please contect with us and feel free to ask us any question. We are very welcome you to join our group."
+                        },
+                        {
+                            "info": "docoGen WebUI is supported from docoGen package which can generate web page to demostrate the document. docoGen WebUI is based on Sementic UI React currently. In future, we will support more web UI library and become more flexible to use."
                         }
                     ],
                     "figure": [
                         {
-                            "path": "../img/square-image.png",
+                            "path": "../img/ToolBuddy-logo.png",
                             "align": "",
                             "size": "",
-                            "caption": "Figure Caption"
+                            "caption": "ToolBuddy Logo"
                         }
                     ],
                     "subarticle": [
                         {
-                            "title": "Why we create Docogen?",
+                            "title": "Join Us!",
                             "content": [
                                 {
-                                    "name": "Why we create Docogen?",
+                                    "name": "Make the world a better place.",
                                     "type": "text",
                                     "data": [
                                         {
-                                            "info": "Building your document and website together."
-                                        },
-                                        {
-                                            "info": "Generate a beautiful introduction paper with simple command."
-                                        }
-                                    ],
-                                    "figure": [
-                                        {
-                                            "path": "../img/square-image.png",
-                                            "align": "",
-                                            "size": "",
-                                            "caption": "Figure Caption"
-                                        }, {
-                                            "path": "../img/square-image.png",
-                                            "align": "",
-                                            "size": "",
-                                            "caption": "Figure Caption"
+                                            "info": "If any question or want to join us, please feel free to contact with us!"
                                         }
                                     ]
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "name": "What is docoGen WebUI?",
+                    "type": "text",
+                    "data": [
+                        {
+                            "info": "docoGen WebUI is supported from docoGen package which can generate web page to demostrate the document. docoGen WebUI is based on Sementic UI React currently. In future, we will support more web UI library and become more flexible to use."
+                        }
+                    ],
+                    "figure": [
+                        {
+                            "path": "../img/ToolBuddy-logo.png",
+                            "align": "",
+                            "size": "",
+                            "caption": "ToolBuddy Logo"
                         }
                     ]
                 }

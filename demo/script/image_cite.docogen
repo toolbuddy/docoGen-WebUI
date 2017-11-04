@@ -1,13 +1,13 @@
 {
     "article": [
         {
-            "title": "About us",
-            "priority": 2,
+            "title": "About Us",
+            "priority": 1,
             "content": [
                 {
                     "name": "What is toolbuddy?",
                     "type": "text",
-                    "text": "An group of good programmer that solve the problem!",
+                    "text": "Make the world a better place.",
                     "data": [
                         {
                             "info": "An group of good programmer that solve the problem!"
@@ -15,30 +15,25 @@
                     ],
                     "figure": [
                         {
-                            "path": "../img/square-image.png",
+                            "path": "../img/ToolBuddy-logo.png",
                             "align": "center",
                             "size": "",
-                            "caption": "Figure Caption"
+                            "caption": "ToolBuddy Logo"
                         }
                     ],
                     "subarticle": [
                         {
-                            "title": "How to join toolbuddy?",
+                            "title": "How to join ToolBuddy?",
                             "content": [
                                 {
-                                    "name": "The way:",
-                                    "type": "text",
+                                    "name": "If any question or want to join us, please feel free to contact with us!",
+                                    "type": "list",
                                     "data": [
                                         {
-                                            "info": "Just email to Kevin and pass your github ID and he will find your by himself!"
-                                        }
-                                    ],
-                                    "figure": [
+                                            "name": "Kevin Cyu: kevinbird61@gmail.com"
+                                        },
                                         {
-                                            "path": "../img/square-image.png",
-                                            "align": "center",
-                                            "size": "",
-                                            "caption": "Figure Caption"
+                                            "name": "Yung-Sheng Lu: yungshenglu1994@gmail.com"
                                         }
                                     ]
                                 }
