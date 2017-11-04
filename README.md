@@ -14,8 +14,8 @@
 
 ## Prerequisite
 
-* Download *Node.js* and install on your working environment.
-* Dependencies of `gulp` as *global*.
+1. Download *Node.js* and install on your working environment.
+2. Dependencies of `gulp` as *global*.
     ```bash
     npm install gulp -g
     ```
