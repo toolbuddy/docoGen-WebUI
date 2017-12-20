@@ -6,7 +6,7 @@
 
 **docoGen** is a document generation tool within your masterpiece.
 
-![docoGen](https://i.imgur.com/fkx11KR.png)
+![docoGen](https://i.imgur.com/ZN1WU8s.png)
 
 ## Introduction
 
