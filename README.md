@@ -6,6 +6,8 @@
 
 **docoGen** is a document generation tool within your masterpiece.
 
+![docoGen](https://i.imgur.com/fkx11KR.png)
+
 ## Introduction
 
 **docoGen WebUI** is supported from docoGen package which can generate web page to demostrate the document. docoGen WebUI is based on Sementic UI React currently. In future, we will support more web UI library and become more flexible to use.
